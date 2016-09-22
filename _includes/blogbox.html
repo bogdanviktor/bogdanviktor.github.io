@@ -1,0 +1,29 @@
+﻿---
+layout: default
+---
+              <div class="col-md-12">
+                <div class="blog-post wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
+                <!-- Image -->
+                <a href="blog-post.html" class="post-img"><img src="/uploads/{{ post.leadimage }}" alt=""></a>
+                <div class="bp-content">               
+                  <!-- Meta data -->
+                  <div class="post-meta">
+                    <a href="#" class="post-date">
+                      <i class="fa fa-calendar-o"></i>
+                      <span>{{ post.date | date_to_string }}</span>
+                    </a>
+                    <a href="#" class="post-comments">
+                      <i class="fa fa-comments-o"></i>
+                      <span>%%commentCount%%</span>
+                    </a>
+                  </div><!-- / .meta -->
+                  <!-- Post Title -->
+                  <a href="blog-post.html" class="post-title"><h3>{{ post.title }}</h3></a>
+                  <!-- Blurb -->
+                  <p>{{ post.lead }}</p>
+                  <!-- Link -->
+                  <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-small">Read More</a>
+                </div><!-- / .bp-content -->
+                </div><!-- / .blog-post -->
+              </div><!-- / .col-md-12 -->
+
