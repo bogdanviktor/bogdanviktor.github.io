@@ -21,11 +21,12 @@ title: Yojee - Blog
 					{% else %}
 						<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
 					{% endif %}
+					
 				  </li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">...</a></li>
-                  <li><a href="#">7</a></li>
+                  <li><a href="page{{ paginator.page }}">{{ paginator.page }}</a></li>
+                  <li><a href="page{{ paginator.page+1 }}">{{ paginator.page+1 }}</a></li>
+                  <li><a href="page{{ paginator.page+3 }}">...</a></li>
+                  <li><a href="page{{ paginator.totalpages }}">{{ paginator.total_pages }}</a></li>
 				  <li>
 					{% if paginator.next_page %}
 						<a href="{{ paginator.next_page_path }}" aria-label="Next">
