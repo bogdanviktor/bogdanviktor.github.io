@@ -1,12 +1,35 @@
+﻿---
+layout: postcontainer
 ---
-layout: default
----
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+                <!-- Blog Post -->
+                <div class="col-md-12 blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
 
-<div class="post">
-  Lead: {{ lead }}
-  Lead2: {{ page.lead }}
-  
-  {{ content }}
-</div>
+                  <!-- Image -->
+                  <img class="img-responsive post-img" src="uploads/%%image%%" alt="Blog Post 1">
+
+                  <!-- Meta data -->
+                  <div class="post-meta">
+                    <a href="#" class="post-date">
+                      <i class="fa fa-calendar-o"></i>
+                      <span>{{ page.date | date_to_string }}</span>
+                    </a>
+                    <a href="#" class="post-comments">
+                      <i class="fa fa-comments-o"></i>
+                      <span>%%commentCount%%</span>
+                    </a>
+                  </div><!-- / .meta -->
+
+                  <!-- Title -->
+                  <h2 class="post-title">{{ page.title }}</h2>
+                  
+
+                  <div class="blog-post-content">
+                    <!-- Intro -->
+                    <blockquote>
+                      {{ page.lead }}
+                    </blockquote>
+
+                    <p>{{ content }}</p>
+                  </div>
+                  
+                </div><!-- / .blog-post-single -->
