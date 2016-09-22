@@ -24,14 +24,14 @@ title: Yojee - Blog
 					
 					
 				  </li>
-				  {% assign a=paginator.page+10 %}
+				  {% assign a=paginator.total_pages | minus: paginator.page %}
 				  {% assign b=paginator.page %}
 				  {% assign c=100 %}
 				  a={{ a }} <br>
 				  b={{ b }} <br>
 				  c={{ c }} <br>
                   <li><a href="page{{ paginator.page }}">{{ paginator.page }}</a></li>
-                  <li><a href="page{{ paginator.page+1 }}">{{ (paginator.page+1) }}</a></li>
+                  <li><a href="page{{ paginator.page+1 }}">{{ paginator.page | plus: 1 }}</a></li>
                   <li><a href="page{{ paginator.page+3 }}">...</a></li>
                   <li><a href="page{{ paginator.totalpages }}">{{ paginator.total_pages }}</a></li>
 				  <li>
