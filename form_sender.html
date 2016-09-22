@@ -1,0 +1,197 @@
+---
+redirect_from: "/senders"
+---
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yojee - Senders</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.css">
+        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="assets/styles/vendor/slick.css">
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="assets/styles/vendor/animate.css">
+
+
+        <!-- Definity CSS -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+
+        <link rel="stylesheet" href="assets/styles/yojee.css">
+        
+        
+        <!-- JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="page-top">
+           
+        
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <!-- ========== Preloader ========== -->
+
+        <div class="preloader">
+          <img src="assets/images/loader.svg" alt="Loading...">
+        </div>
+        
+       <!-- ========== Contact ========== -->
+
+        <section id="contact" class="contact-3 forms">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-md-12 col-lg-offset-2 col-lg-8 form-container">
+                <a class="close-icon" href="index.html#joinus"></a> 
+                
+                
+                <div class="sender-left"></div>
+                <div class="sender-right"></div>
+                
+                
+                <div class="form-wrapper">
+                  <div class="from-header">
+                    <h2>Join <img src="assets/images/logo.png" /> as a</h2>
+                    <h1>SENDER</h1>
+                    
+                   <img class="role_icon" src="assets/images/icon_sender_n.png" />
+                  </div>
+
+                 <form id="data-form" action="https://yojee-webforms.herokuapp.com/api/sender" method="POST" class="form-minimal ">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label for="name-contact-3">Name *</label>  
+                      <input type="text" name="sender[name]" id="name-contact-3" class="form-control validate-locally" placeholder="Enter your name" autofocus>
+                      <span class="pull-right alert-error"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email-contact-3">Email *</label>  
+                      <input type="email" name="sender[email]" id="email-contact-3" class="form-control validate-locally" placeholder="Enter your email">
+                      <span class="pull-right alert-error"></span>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                      <label for="phone-contact-3">Phone *</label>   
+                      <input type="tel" name="sender[phone]" id="phone-contact-3" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <!-- Country -->
+                    <div class="form-group">
+                      <label for="country-contact-3">Country *</label>   
+                      <input type="text" name="sender[country]" id="country-contact-3" class="form-control" placeholder="Enter your country">
+                    </div>
+
+                    <!-- Destinations -->
+                    <div class="form-group">
+                      <label for="destinations-contact-3">Number of destinations</label>   
+                      <input type="text" name="sender[destinations]" id="destinations-contact-3" class="form-control" placeholder="0">
+                    </div>
+                   
+                    <!-- daily packages -->
+                    <div class="form-group">
+                      <label for="packages-contact-3">Number of packages a day</label>   
+                      <input type="text" name="sender[packages]" id="packages-contact-3" class="form-control" placeholder="0">
+                    </div>
+                    
+                    
+                    <div class="form-group">
+<!--                        <input id="demosubmit" type="submit" class="btn-text demo-submit" value="SUBMIT">-->
+<!--                        <input type="submit" class="btn-text" value="SUBMIT">-->
+                        <input id="button-submit" type="button" class="btn-text" value="SUBMIT">
+                    </div>
+                    <!-- Ajax Message -->
+                    <div class="ajax-message"></div>
+
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- / .container -->
+        </section><!-- / .contact-3 -->
+
+<!--
+        <div id="popup-holder">
+            <div class="row">
+               <div class="col-lg-3 centered-column popup">
+                    <div class="left-img"></div><div class="right-img"></div>
+                
+                    <img src="assets/images/logo.png" class="logo"/>
+                    <h1>THANK YOU!</h1>
+                    <img src="assets/images/hand-shake-icon.png"  class="icon"/>
+                    <p>Your pre-registration is very much appreciated. You&apos;ll be informed of all the benefits Yojee will bring you. We&apos;ll keep you updated and inform you about our progress.</p>
+                    
+                    <a class="close-icon" href="index.html#joinus"></a>              
+               
+               </div>
+            </div>
+            
+        </div>
+
+    -->
+
+        <!-- ========== Scripts ========== -->
+
+        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/vendor/google-fonts.js"></script>
+<!--    <script src="assets/js/vendor/jquery.easing.js"></script>
+        <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+-->
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+<!--    <script src="assets/js/vendor/smoothscroll.js"></script>
+        <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+        <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/vendor/jquery.stellar.min.js"></script>
+        <script src="assets/js/vendor/jquery.parallax.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/vendor/countup.min.js"></script>
+        <script src="assets/js/vendor/isotope.min.js"></script>
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/vendor/wow.min.js"></script>
+-->
+        <!-- Definity JS -->
+        <script src="assets/js/main.js"></script>
+        
+		<!-- script -->
+		<script>
+			$("#button-submit").on('click', function(){
+				var post = {
+			        "async": true,
+			        "crossDomain": true,
+			        "url": "https://yojee-webforms.herokuapp.com/api/sender",
+			        // "url": "http://bot.akomba.com:8081/sender",
+			        "method": "POST",
+					"data":$("#data-form").serialize(),
+			      };
+				$.ajax(post).done(function(response){
+					if(response.code == 0){
+						window.location.href='thank_you.html';
+					}else{
+						alert(response.msg);						
+					}
+				});
+			});
+		</script>
+    </body>
+</html>
