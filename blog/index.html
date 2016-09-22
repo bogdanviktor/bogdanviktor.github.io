@@ -27,9 +27,9 @@ title: Yojee - Blog
 				  {% assign a=paginator.page+10 %}
 				  {% assign b=paginator.page %}
 				  {% assign c=100 %}
-				  a={% a %} <br>
-				  b={% b %} <br>
-				  c={% c %} <br>
+				  a={{ a }} <br>
+				  b={{ b }} <br>
+				  c={{ c }} <br>
                   <li><a href="page{{ paginator.page }}">{{ paginator.page }}</a></li>
                   <li><a href="page{{ paginator.page+1 }}">{{ (paginator.page+1) }}</a></li>
                   <li><a href="page{{ paginator.page+3 }}">...</a></li>
