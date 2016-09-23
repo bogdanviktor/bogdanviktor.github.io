@@ -16,9 +16,7 @@
 					  <i class="fa fa-user"></i>
 					  <span>{{ post.author }}</span>
 					</span>
-					<span class="post-date">
-                    by {{ post.author }} / {{ post.date | date_to_string }}
-					</span>
+					<span class="post-date"><span>by {{ post.author }} / {{ post.date | date_to_string }}</span></span>
 					{% endif %}
                     </span>
                   </div><!-- / .meta -->
