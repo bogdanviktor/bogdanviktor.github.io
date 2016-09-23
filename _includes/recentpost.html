@@ -2,15 +2,15 @@
               <div class="col-md-12 ws-s recent-posts-widget">
                 <h5 class="header-widget">Recent Posts</h5>
 
-				{% for page in site.pages %}
+				{% for post in site.posts %}
 					<div class="widget-item">
-						<a href="{{ page.url }}"><h6 class="h-alt">{{ page.title }}</h6></a>
+						<a href="{{ post.url }}"><h6 class="h-alt">{{ post.title }}</h6></a>
 						<span>
-						{% if page.author %}
-							by {{ page.author }} / 
+						{% if post.author %}
+							by {{ post.author }} / 
 						{% endif %}
-						{% if page.date %}
-							{{ page.date | date_to_string }}</span>
+						{% if post.date %}
+							{{ post.date | date_to_string }}</span>
 						{% endif %}
 						
 					</div>
