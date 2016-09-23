@@ -1290,3 +1290,24 @@ font-size: 14px;
    font-size: 1.07em;
    letter-spacing: 1px;   
 }
+
+@media screen and (min-width: 600px) {
+	.authorsmall {
+		display:none ;
+	}
+
+	.authorwide {
+		display:block ;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.authorsmall {
+		display:block ;
+	}
+
+	.authorwide {
+		display:none ;
+	}
+}
+
