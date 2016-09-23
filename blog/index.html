@@ -10,37 +10,41 @@ title: Yojee - Blog
 
 <!-- Pagination links -->
 
-              <!-- Pagination -->
+   <!-- Pagination -->
+			{% if paginator.total_pages > 1 %}
               <nav class="blog-pagination mb-sm-100">
                 <ul class="pagination">
-				  <li>
-					{% if paginator.previous_page %}
-						<a href="{{ paginator.previous_page_path }}" aria-label="Previous">
-						  <span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
-						</a>
-					{% else %}
-						<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
-					{% endif %}
-				  </li>
-				  
-                  {% if paginator.total_pages>2 %}				
-					<li><a href="page{{ paginator.page }}">{{ paginator.page }}</a></li>
-					<li><a href="page{{ paginator.page | plus: 1 }}">{{ paginator.page | plus: 1 }}</a></li>
-					<li><a href="page{{ paginator.page | plus: 2 }}">...</a></li>
-					<li><a href="page{{ paginator.totalpages }}">{{ paginator.total_pages }}</a></li>
-				  {% endif %}
+					<li>
+						{% if paginator.previous_page %}
+							<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						{% else %}
+							<span aria-hidden="true"><i class="fa fa-angle-double-left paginator-diabled"></i></span>
+						{% endif %}
+					</li>
+					{% for page in (1..paginator.total_pages) %}
+						<li>
+						{% if page == paginator.page %}
+							<span class="paginator-act">{{ page }}</span>
+						{% elseif page == 1 %}
+							<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+						{% else %}
+							<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+						{% endif %}
+						</li>
+					{% endfor %}					
+					<li>
 
-				  <li>
-					{% if paginator.next_page %}
-						<a href="{{ paginator.next_page_path }}" aria-label="Next">
-						  <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
-						</a>
-					{% else %}
-						  <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
-					{% endif %}
-				  </li>
-                </ul>
-              </nav>
-
-
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+						{% if paginator.next_page %}
+							<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						{% else %}
+							<span aria-hidden="true"><i class="fa fa-angle-double-right paginator-diabled"></i></span>
+						{% endif %}
+					</li>
+	          </nav>
+			{% endif %}
+			
+			
