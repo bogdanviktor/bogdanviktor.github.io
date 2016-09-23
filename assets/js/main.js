@@ -35,14 +35,14 @@
 	// Initialize functions after elements are loaded.
 	$(window).load(function() {
 		
-		
+<!-- BV		
 		$(".blog-post").click(function(){
 			
 			var hrefToGo=$(this).find("a.btn-outline").attr('href');
 			window.location.href=hrefToGo;
 		});
 		
-		
+-->
 		
 		$("#popup-holder").click( function() {
 			window.location.href = 'index.html';	
