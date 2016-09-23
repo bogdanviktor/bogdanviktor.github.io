@@ -5,14 +5,13 @@
 				{% for post in site.posts %}
 					<div class="widget-item">
 						<a href="{{ post.url }}"><h6 class="h-alt rptitle">{{ post.title }}</h6></a>
-						<span>
+						<span class='rpauthor'>
 						{% if post.author %}
 							by {{ post.author }} / 
 						{% endif %}
 						{% if post.date %}
 							{{ post.date | date_to_string }}</span>
-						{% endif %}
-						
+						{% endif %}						
 					</div>
 				{% endfor %}
 
