@@ -1272,6 +1272,10 @@ font-size: 14px;
 	margin-bottom:0 ;
 }
 
+.rptitle {
+	font-weight:bold;
+}
+
 .rpauthor {
   font-size: 12px;
   line-height:1.1%;
