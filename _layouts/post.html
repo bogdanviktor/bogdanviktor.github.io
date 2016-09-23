@@ -10,7 +10,7 @@ layout: defaultblog
 				  <img class="img-responsive post-img" src="/uploads/{{ page.postimage }}" alt="">
   				  {% endif %}
 				  <!-- Meta data -->
-				  <div class="post-meta">
+				  <div class="post-meta authorwide">
 					<span class="post-date">
 					  <i class="fa fa-calendar-o"></i>
 					  <span>{{ page.date | date_to_string }}</span> 
@@ -20,6 +20,14 @@ layout: defaultblog
 					  <i class="fa fa-user"></i><span>{{ page.author }}</span>
 					</span>
 					{% endif %}
+				  </div><!-- / .meta -->
+
+  				  <div class="post-meta authorsmall">
+					<span class="post-date"><i class="fa fa-user"></i><span>
+					{% if post.author %} 
+					by {{ post.author }} / 
+					{% endif %} 
+					{{ post.date | date_to_string }}</span></span>
 				  </div><!-- / .meta -->
 
 				  <!-- Title -->
