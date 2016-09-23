@@ -3,8 +3,6 @@
                 <h5 class="header-widget">Recent Posts</h5>
 
 				{% for page in site.pages %}
-						<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-						<p>{{ page.content }}</p>
 					<div class="widget-item">
 						<a href="{{ page.url }}"><h6 class="h-alt">{{ page.title }}</h6></a>
 						<span>
