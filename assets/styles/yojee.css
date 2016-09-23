@@ -1275,8 +1275,12 @@ font-size: 14px;
 .rpauthor {
   font-size: 12px;
   line-height:1.1%;
-  margin-bottom:10px;
 }
+
+.rpitem {
+	margin-bottom:10px;
+}    
+
 
 .post-title {
    font-size: 1.07em;
