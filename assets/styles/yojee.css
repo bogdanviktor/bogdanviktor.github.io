@@ -1262,3 +1262,16 @@ font-size: 14px;
 	margin-left:450px;
 	margin-top:30px;
 }
+
+.rptitle {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.8em;
+}
+
+.post-title {
+   font-size: 1.07em;
+   letter-spacing: 1px;
+}
