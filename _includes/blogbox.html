@@ -12,9 +12,13 @@
                       <span>{{ post.date | date_to_string }}</span>
                     </span>
 					{% if post.author %}
-                    <br><span class="post-date">
+                    <span class="post-comments">
 					  <i class="fa fa-user"></i>
 					  <span>{{ post.author }}</span>
+					</span>
+					<br>
+					<span class="post-date">
+                    by {{ post.author }} / {{ post.date | date_to_string }}
 					</span>
 					{% endif %}
                     </span>
