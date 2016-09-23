@@ -5,6 +5,7 @@ date: 2014-04-30
 lead: this is the lead
 leadimage: 6.jpg
 postimage: 7.jpg
+author: Viktor Bogdan
 ---
 
 Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
