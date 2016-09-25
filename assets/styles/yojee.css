@@ -1317,10 +1317,20 @@ font-size: 14px;
 
 #investorsubdiv title {
 	font-weight:bold ;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 #investorsubdiv ul { 
    list-style-type: disc; 
    list-style-position: inside; 
    margin-left: 15px; 
+}
+
+#investorsubdiv li { 
+	background: #FFFFFF ;
+	box-shadow: 0 0 0 #FFFFFF ;
+	margin:0 ;
+	padding:0 ;
+	padding-left:20 ;
 }
