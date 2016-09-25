@@ -1311,3 +1311,16 @@ font-size: 14px;
 	}
 }
 
+#investorsubdiv td {
+	vertical-align:top ;
+}
+
+#investorsubdiv title {
+	font-weight:bold ;
+}
+
+#investorsubdiv ul { 
+   list-style-type: disc; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
