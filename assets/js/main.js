@@ -35,6 +35,11 @@
 	// Initialize functions after elements are loaded.
 	$(window).load(function() {
 				
+		$(".clickmark").click(function(){			
+			var hrefToGo=$(this).find("a").attr('href');
+			window.location.href=hrefToGo;
+		});
+
 		$("#popup-holder").click( function() {
 			window.location.href = 'index.html';	
 		});

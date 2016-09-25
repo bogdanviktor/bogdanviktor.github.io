@@ -1315,19 +1315,19 @@ font-size: 14px;
 	vertical-align:top ;
 }
 
-#investorsubdiv title {
+#investorsubdiv .title {
 	font-weight:bold ;
 	margin-top:20px;
 	margin-bottom:20px;
 }
 
-#investorsubdiv ul { 
+#investors ul { 
    list-style-type: disc; 
    list-style-position: inside; 
    margin-left: 15px; 
 }
 
-#investorsubdiv li { 
+#investors li { 
 	background: #FFFFFF ;
 	box-shadow: 0 0 0 #FFFFFF ;
 	margin:0 ;
