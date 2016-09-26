@@ -617,7 +617,7 @@ section#contact{
 /* BV */
 #blog .sec-heading { 
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding-bottom:0;
 }
 
@@ -1310,6 +1310,13 @@ font-size: 14px;
 		display:none ;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	.blog-classic .blog-post {
+		margin-bottom: 50px;
+	}
+}
+
 
 #investors #investorsubdiv td {
 	vertical-align:top ;
