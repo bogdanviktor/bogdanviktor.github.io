@@ -9,16 +9,16 @@
 	$(document).ready(function(){
 		initNavbar();
 		initScroller();
-		initCountCirc();
-		initCountCircMin();
+		//initCountCirc();	//not in use BV 12.10.2016
+		//initCountCircMin(); //not in use BV 12.10.2016
 		initCountNbr();
 		initCountMin();
 		initSliders();
-		initGallery();
-		initAnimation();
-		//initVideoBg();
-		initKenburns();
-		initCountdown();
+		//initGallery(); //not in use BV 12.10.2016
+		initAnimation();  //not sure BV 12.10.2016
+		//initVideoBg();  //put after init BV 12.10.2016
+		//initKenburns(); //not in use BV 12.10.2016
+		//initCountdown(); //not in use BV 12.10.2016
 		
 		initScrollMagic();
 
@@ -48,9 +48,8 @@
 		$('.preloader img').fadeOut(); // will first fade out the loading animation
 		$('.preloader').delay(350).fadeOut('slow', function() {
 
-		initVideoBg(); //was in init but was too slow. BV 12.10.2016
-		});
-		
+		initVideoBg(); //was in init but caused too slow page loading. now it seems to be faster (but not in real) BV 12.10.2016
+		});	
 
 		
 		$("#demosubmit").click( function() {
