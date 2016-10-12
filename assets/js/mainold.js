@@ -16,7 +16,7 @@
 		initSliders();
 		initGallery();
 		initAnimation();
-		//initVideoBg();
+		initVideoBg();
 		initKenburns();
 		initCountdown();
 		
@@ -48,7 +48,6 @@
 		$('.preloader img').fadeOut(); // will first fade out the loading animation
 		$('.preloader').delay(350).fadeOut('slow', function() {
 
-		initVideoBg(); //was in init but was too slow. BV 12.10.2016
 		});
 		
 

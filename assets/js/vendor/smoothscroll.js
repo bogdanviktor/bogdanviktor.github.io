@@ -577,7 +577,7 @@
         }
 
         function isInsideYoutubeVideo(event) {
-            var elem = event.target;
+			var elem = event.target;
             var isControl = false;
             if (document.URL.indexOf ('www.youtube.com/watch') != -1) {
                 do {
