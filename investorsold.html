@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yojee - Announcements</title>
+    <title>Yojee - Investors</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-control" content="max-age=1209600">
@@ -21,9 +21,10 @@
     <!-- Slider -->
     <!--<link rel="stylesheet" href="assets/styles/vendor/slick.min.css">-->
     <!-- Lightbox -->
-    <!--<link rel="stylesheet" href="assets/styles/vendor/magnific-popup.min.css">-->
+    <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.min.css"> <!-- BV -->
     <!-- Animate.css -->
-    <!--<link rel="stylesheet" href="assets/styles/vendor/animate.min.css">-->
+    <link rel="stylesheet" href="assets/styles/vendor/animate.min.css"> <!-- BV -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script> <!-- BV -->
 
 
     <!-- Definity CSS -->
@@ -36,7 +37,6 @@
 </head>
 
 <body id="page-top" data-spy="scroll">
-
 
 
     <!--[if lt IE 8]>
@@ -55,11 +55,11 @@
     <nav class="navbar navbar-default navbar-fixed-top  navbar-fw investor" role="navigation">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
             <!-- Logo -->
             <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Yojee - Logo" height="50" /></a>
         </div>
@@ -68,8 +68,8 @@
         <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
             <ul class="nav navbar-nav">
                 <li><a href="/index.html">Home<span class="sr-only"></span></a></li>
-                <li class="active"><a href="#">investors<span class="sr-only"></span></a></li>
-				<li><a href="/blog/">blog<span class="sr-only"></span></a></li>
+                <li class="active"><a href="/investors.html">investors<span class="sr-only"></span></a></li>
+		        <li><a href="/blog/">blog<span class="sr-only"></span></a></li>
                 <li><a href="/contact.html">contact us<span class="sr-only"></span></a></li>
                 <li>
                     <form action="https://yojee-webforms.herokuapp.com/api/newsletter" method="post" id="newsletter_form">
@@ -81,6 +81,18 @@
                     <p id="ty" style="display: none">WE&apos;LL KEEP YOU UPDATED</p>
                 </li>
 
+
+                <!--
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">DE</a></li>
+          <li><a href="#">FR</a></li>
+          <li><a href="#">ES</a></li>
+        </ul>
+        </li>
+        / Languages -->
+
             </ul>
             <!-- / .nav .navbar-nav -->
         </div>
@@ -91,29 +103,70 @@
 
     <!-- ========== Investors - Section ========== -->
 
-    <section id="investors" class="container">
+    <section id="investors" class="container blog-classic">
         <div class="row">
 
             <header class="sec-heading">
                 <h2 class="nunito_bold">INVESTORS</h2>
-                <span class="subheading">YOJEE ASX ANNOUNCEMENTS</span>
+                <span class="subheading">YOJEE ASX COMPLIANCE INFORMATION</span>
             </header>
 
+            <div class="col-md-8" style="float:none;margin:0 auto;">
+			  <!-- Blog Post 1 -->
+              <div class="col-md-12">
+                <div class="blog-post blog-post-bv wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
+					<!-- Image -->
 
-            <table class="table forum table-striped">
-                <thead>
-                    <tr>
-                        <th class="cell-stat text-center hidden-xs hidden-sm">Date</th>
-                        <th>Description </th>
-                    </tr>
-                </thead>
-                <tbody id="announcements">
-                    <!-- <tr>
-                        <td class="text-center hidden-xs hidden-sm"><a href="#">9 542</a></td>
-                        <td></td>
-                    </tr> -->
-                </tbody>
-            </table>
+					<div style="width:100%" class="vidcontainer">
+						<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<div class="bp-content">
+					  <!-- Meta data -->
+					  <div class="post-meta">
+						<a href="#" class="post-date">
+						  <i class="fa fa-calendar-o"></i>
+						  <span>August 01.2015</span>
+						</a>
+						<a href="#" class="post-comments">
+						  <i class="fa fa-comments-o"></i>
+						  <span>12</span>
+						</a>
+					  </div><!-- / .meta -->
+					  <!-- Post Title -->
+					  <h3>EXECUTIVE SERIES 10 AUG 16: YOJEE (YOJ) MANAGING DIRECTOR, ED CLARKE</h3>
+					  <!-- Link -->
+					  <!-- <a href="#" class="btn btn-small">Play</a> -->
+					</div><!-- / .bp-content -->
+                
+				</div><!-- / .blog-post-bv -->
+              </div><!-- / .col-md-12 -->
+			</div><!-- / .col-md-8 -->
+
+			
+            <div class="col-md-6" style="margin:0 auto;float:none;clear:both;">
+                <h4>Investor Relations</h4>
+                <ul>
+                    <li class='clickmark'><a href="announcements.html" target="_blank">ASX Announcements</a></li>
+<!--			
+                    <li class='clickmark'><a href="https://docs.google.com/document/d/1TZeE9DyBxTT1vDg_hYMnTI6K-7EY1xq7evuCYXRePAQ/pub" target="_blank">Annual Reports</a></li>
+                    <li class='clickmark'><a href="https://docs.google.com/document/d/16os7fHr3BXrFmofDh4I9oOdfbaIVSO9cI5WU5fsZFsA/pub" target="_blank">Quarterly Reports</a></li>
+                    <li class='clickmark'><a href="http://www.asx.com.au/asx/research/company.do#!/YOJ" target="_blank">Share Price</a></li>
+                    <li class='clickmark'><a href="https://docs.google.com/document/d/1ZnWPt321W-GZR0Z7hOL1S1GnxIl9YIN3vC_4Ylth27Q/pub" target="_blank">Share Registry</a></li>
+								-->
+
+                </ul>
+
+            </div><br><br>
+            <div class="col-md-6" style="margin:0 auto;float:none;clear:both;">
+                <h4>Corporate Information</h4>
+                <ul>
+                    <li class='clickmark'><a href="/inv_companyoverwiev.html">Company Overview</a></li>
+                    <li class='clickmark'><a href="/inv_directors.html">Directors</a></li>
+                    <li class='clickmark'><a href="/inv_corporategov.html">Corporate Governance</a></li>
+                    <li class='clickmark'><a href="/inv_corporatedir.html">Corporate Directory</a></li>
+                </ul>
+            </div>
 
 
         </div>
@@ -161,16 +214,12 @@
                 <div class="col-md-4">
                     <div class="widget about-widget">
                         <h5 class="header-widget">Contact</h5>
-                        <p>8 EU TONG SEN ST.2
-                            <br/>#12-82
-                            <br/>THE CENTRAL
-                            <br/>SINGAPORE
-                            <br/>059818</p>
+                        <p>8 EU TONG SEN ST.2<br/>#12-82<br/>THE CENTRAL<br/>SINGAPORE<br/>059818</p>
                     </div>
                     <!-- / .widget -->
                 </div>
                 <!-- / .col-md-3 -->
-
+                <h4 style="color:#8A8A8A; margin-left:1.67em">&copy; 2016 Yojee Pte. Ltd. All rights reserved.</h4>
             </div>
             <!-- / .row -->
         </div>
@@ -186,6 +235,7 @@
     <!-- JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script> <!-- BV -->
     <script src="assets/js/vendor/google-fonts.js"></script> <!-- BV -->
     <script src="assets/js/vendor/jquery.easing.js"></script>
     <!--<script src="assets/js/vendor/jquery.waypoints.min.js"></script>-->
@@ -194,13 +244,13 @@
     <script src="assets/js/vendor/smoothscroll.js"></script>
     <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
     <!--<script src="assets/js/vendor/jquery.scrollTo.min.js"></script>-->
-    <script src="assets/js/vendor/jquery.stellar.min.js"></script>
-    <script src="assets/js/vendor/jquery.parallax.js"></script>
+    <script src="assets/js/vendor/jquery.stellar.min.js"></script> <!-- BV -->
+    <script src="assets/js/vendor/jquery.parallax.js"></script>  <!-- BV -->
     <script src="assets/js/vendor/slick.min.js"></script>
     <!--<script src="assets/js/vendor/jquery.easypiechart.min.js"></script>-->
     <!--<script src="assets/js/vendor/countup.min.js"></script>-->
-    <script src="assets/js/vendor/isotope.min.js"></script>
-    <!--<script src="assets/js/vendor/packery-mode.pkgd.min.js"></script>-->
+    <script src="assets/js/vendor/isotope.min.js"></script> <!-- BV -->
+    <!--<script src="assets/js/vendor/packery-mode.pkgd.min.js"></script> -->
     <!--<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>-->
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
@@ -214,19 +264,21 @@
     <script src="assets/js/vendor/animation.velocity.min.js"></script>
     <script src="assets/js/vendor/debug.addIndicators.min.js"></script>
     <script src="assets/js/vendor/jquery.ScrollMagic.min.js"></script>
-    <script src="assets/js/vendor/mustache.js"></script>
 
     <script src="assets/js/vendor/TweenMax.min.js"></script>
 
     <!-- Google Maps -->
-    <!-- <script src="assets/js/gmap.js"></script> -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script> -->
+	<!-- BV
+		<script src="assets/js/gmap.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script>
+	-->
 
     <!-- Definity JS -->
     <script src="assets/js/main.js"></script>
 
-
-    <script>
+	<script>
+	    $(".vidcontainer").fitVids();
+		
         function postNewsLetter(f) {
             var post = {
                 "async": true,
@@ -338,53 +390,12 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- <script>
+    <script>
         $('#i1').load("https://docs.google.com/document/d/1Qn1c865nSRp5BP3NHoekIHnmgcC4G6lFMMzEDKcDlZ0/pub", function() {
             alert("loadded");
         });
         $('#i2').load("https://docs.google.com/document/d/1TZeE9DyBxTT1vDg_hYMnTI6K-7EY1xq7evuCYXRePAQ/pub");
         $('#i3').load("https://docs.google.com/document/d/16os7fHr3BXrFmofDh4I9oOdfbaIVSO9cI5WU5fsZFsA/pub");
-    </script> -->
-
-    <script>
-        var template =
-            '{{#announcements}}' +
-            '<tr>' +
-                '<td class="text-center hidden-xs hidden-sm"><a href="{{url}}" target="_blank">{{title.$t}}</a></td>' +
-                '<td><a href="{{url}}" target="_blank">{{content.$t}}</a></td>' +
-            '</tr>' +
-            '{{/announcements}}'
-
-        displayAnnouncements = function(data) {
-            var rendered = Mustache.render(template, {
-                announcements: data
-            })
-            $('#announcements').append(rendered);
-        }
-
-
-
-        $(document).ready(function() {
-			$('.preloader img').fadeOut(); // will first fade out the loading animation
-			$('.preloader').delay(350).fadeOut('slow', function() {} );
-
-			//Azzuwan's spreadsheets
-            //var anns = "https://spreadsheets.google.com/feeds/list/1Ek8hyf21aKKF-aOlUgxXGlJnk4bRU8ZjGsKLItdZ6qU/od6/public/basic?alt=json";
-
-            //Actual spreadsheets
-            var anns = "https://spreadsheets.google.com/feeds/list/1hWsAZierwjQBGpXs3K7YZ9kZ9SL_U64KsDeXMrjhaCk/od6/public/basic?alt=json";
-            $.getJSON(anns, function(results) {
-                console.log(results);
-                var data = results.feed.entry
-
-                for (var i = 0; i < data.length; i++) {
-                    var desc = data[i].content.$t = data[i].content.$t.replace("description:", "")
-                    var url = data[i].url = data[i].content.$t.substring(desc.indexOf(", link:") + 8, desc.length + 1)
-                    desc = data[i].content.$t = data[i].content.$t.substring(0, desc.indexOf(", link:"))
-                }
-                displayAnnouncements(data)
-            });
-        });
     </script>
 
 </body>

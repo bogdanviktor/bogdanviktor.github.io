@@ -46,10 +46,9 @@
 
 		// Preloader
 		$('.preloader img').fadeOut(); // will first fade out the loading animation
-		$('.preloader').delay(350).fadeOut('slow', function() {
-
+		$('.preloader').delay(350).fadeOut('slow', function() {});	
+		
 		initVideoBg(); //was in init but caused too slow page loading. now it seems to be faster (but not in real) BV 12.10.2016
-		});	
 
 		
 		$("#demosubmit").click( function() {
@@ -57,7 +56,11 @@
 			$("#popup-holder").addClass('visible');
 		});
 		
-
+		//BV 12.10.2016
+		if ($('#bv-vidcontainer').hasClass('vidcontainer')) {
+			$('.vidcontainer').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>') ;
+		    $('.vidcontainer').fitVids();
+		}
 		initPortfolio();
 		initBlogMasonry();
 
