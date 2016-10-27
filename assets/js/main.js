@@ -21,7 +21,6 @@
 		//initCountdown(); //not in use BV 12.10.2016
 		
 		initScrollMagic();
-
 		// Parallax disabled for mobile screens
 		if ($(window).width() >= 1260) {
 			initParallax();
