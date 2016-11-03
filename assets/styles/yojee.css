@@ -1359,6 +1359,20 @@ font-size: 14px;
 	margin:0 auto ;
 }
 
+.bc_teamcenter {
+	float:none;
+	display: inline-block  ;
+}
+	
+.bc_teamcontainer {
+	text-align:center ;
+}
+
+.bcmemberheight {
+	min-height:290px;
+	text-align:left;
+}
+
 footer h4 {
 	font-size:12px;	
 	font-weight:normal;
