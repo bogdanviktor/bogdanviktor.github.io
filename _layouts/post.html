@@ -8,7 +8,11 @@ layout: defaultblog
 				  
 				  {% if page.postimage %}
 				  <img class="img-responsive post-img" src="/uploads/{{ page.postimage }}" alt="">
-  				  {% endif %}
+				  {% else %}
+					{% if page.leadimage %}
+						<img class="img-responsive post-img" src="/uploads/{{ page.leadimage }}" alt="">				  
+					{% endif %}
+				  {% endif %}
 				  <!-- Meta data -->
 				  <div class="post-meta authorwide">
 					{% if page.date %}
