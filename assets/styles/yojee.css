@@ -1362,4 +1362,20 @@ font-size: 14px;
 footer h4 {
 	font-size:12px;	
 	font-weight:normal;
+        color:#8A8A8A;
+        margin-left:2em;
+}
+
+footer h4 a {
+    color:#8A8A8A;
+}
+
+footer h4 a:hover {
+    color:#FFFFFF;
+}
+
+.alphalist li {
+  margin-left: 1em;
+  word-wrap: normal;
+  list-style-position: outside;
 }

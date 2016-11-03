@@ -45,7 +45,7 @@
 
 		// Preloader
 		$('.preloader img').fadeOut(); // will first fade out the loading animation
-		$('.preloader').delay(350).fadeOut('slow', function() {});	
+		$('.preloader').delay(350).fadeOut('slow', function(){ loadHangableStuff();});			
 		
 		initVideoBg(); //was in init but caused too slow page loading. now it seems to be faster (but not in real) BV 12.10.2016
 
@@ -55,16 +55,19 @@
 			$("#popup-holder").addClass('visible');
 		});
 		
-		//BV 12.10.2016
-		if ($('#bv-vidcontainer').hasClass('vidcontainer')) {
-			$('.vidcontainer').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>') ;
-		    $('.vidcontainer').fitVids();
-		}
 		initPortfolio();
 		initBlogMasonry();
 
 	});
-
+	
+	////BV 03.11.2016 it launches after fadeout done. Hopefully if one of these hangs on that doesn't hang the page load itself (the fader)
+	function loadHangableStuff() {
+		if ($('#bv-vidcontainer').hasClass('vidcontainer')) {
+				$('.vidcontainer').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>') ;
+				$('.vidcontainer').fitVids();
+		}
+	}
+	
 	function initScrollMagic() {
         //code
 
@@ -439,10 +442,10 @@
 					var counter2 = new CountUp('count-2', 0, 8, 0, 3, options);
 					counter2.start();
 					// Counter 3
-					var counter3 = new CountUp('count-3', 0, 482, 0, 3, options);
+					var counter3 = new CountUp('count-3', 0, 591, 0, 3, options);
 					counter3.start();
 					// Counter 4
-					var counter4 = new CountUp('count-4', 0, 25957, 0, 3, options);
+					var counter4 = new CountUp('count-4', 0, 32294, 0, 3, options);
 					counter4.start();
 					// init only once
 					this.destroy();
