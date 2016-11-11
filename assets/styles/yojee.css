@@ -858,10 +858,11 @@ section#contact{
 
 .form-group input[type="text"], .form-group input[type="email"],.form-group input[type="tel"],.form-group textarea{
   border:solid 1px #ccc !important;
-  padding-top:27px;
-  padding-bottom: 27px;
+  padding-top:17px;
+  padding-bottom: 17px;
   font-size:16px;
   line-height: 16px;
+  height:60px;
 }
 
 .form-group input[type="submit"], .demo-submit{

@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yojee - Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.min.css">
+        <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="assets/styles/vendor/slick.min.css">
+        <!-- Lightbox -->
+        <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="assets/styles/vendor/animate.min.css">
+
+
+        <!-- Definity CSS -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/responsive.css">
+
+		<!-- Yojee CSS -->
+		<link rel="stylesheet" href="assets/styles/yojee.css"> <!-- BV -->
+
+		<script src="assets/js/vendor/ScrollMagic.min.js"></script> <!-- BV -->
+	    <script src="assets/js/vendor/jquery.ScrollMagic.min.js"></script> <!-- BV -->
+		<script src="assets/js/vendor/TweenMax.min.js"></script> <!-- BV -->
+
+        
+		<!-- JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="page-top">
+           
+        
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <!-- ========== Preloader ========== -->
+
+        <div class="preloader">
+          <img src="assets/images/loader.svg" alt="Loading...">
+        </div>
+
+
+
+    <!-- ========== Navigation ========== -->
+
+    <nav class="navbar navbar-default navbar-fixed-top  navbar-fw investor" role="navigation">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="assets/images/logo.png" alt="Yojee - Logo" height="50" /></a>
+        </div>
+
+        <!-- Navbar Links -->
+        <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home<span class="sr-only"></span></a></li>
+				<li><a href="investors.html">investors<span class="sr-only"></span></a></li>
+		        <li class="active"><a href="#">blog<span class="sr-only"></span></a></li>
+                <li><a href="contact.html">contact us<span class="sr-only"></span></a></li>
+                <li>
+                    <form action="https://yojee-webforms.herokuapp.com/api/newsletter" method="post" id="newsletter_form">
+                        <div class="form-group">
+                            <input type="email" name="newsletter[email]" placeholder="JOIN OUR NEWSLETTER" autocomplete="off">
+                            <button type="button" id="newsletter-top"><i class="fa fa-send-o"></i></button>
+                        </div>
+                    </form>
+                    <p id="ty" style="display: none">WE&apos;LL KEEP YOU UPDATED</p>
+                </li>
+
+
+                <!--
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">DE</a></li>
+          <li><a href="#">FR</a></li>
+          <li><a href="#">ES</a></li>
+        </ul>
+        </li>
+        / Languages -->
+
+            </ul>
+            <!-- / .nav .navbar-nav -->
+        </div>
+        <!--/.navbar-collapse -->
+    </nav>
+    <!-- / .navbar -->
+
+
+
+        <!-- ========== Page Title ========== -->
+
+
+        <!-- ========== Blog - 1 Column ========== -->
+        
+        <div id="blog" class="section container blog-classic">
+          <div class="row">
+            <header class="sec-heading">
+                <h2 class="nunito_bold">BLOG</h2>
+                <span class="subheading">LATEST BLOG POSTS</span>
+            </header>
+
+            <div class="col-md-8">
+
+			  <div id="blogdynamic"></div>			                                
+              
+              <!-- Pagination -->
+              <nav class="blog-pagination mb-sm-100">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">7</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+            </div><!-- / .col-md-8 -->
+
+
+
+            <!-- ========== Sidebar ========== -->
+
+            <aside class="col-md-offset-1 col-md-3 sidebar">
+
+              <!-- Search - Widget -->
+              <div class="col-md-12 ws-s searh-widget">
+                <div class="form-group">
+                  <input type="search" placeholder="Search ..." class="form-control">
+                  <button class="inside-input-btn"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+
+
+              <!-- Tags - Widget -->
+              <div id="blogtags" class="col-md-12 ws-s tags-widget">
+                <h5 class="header-widget">Tags</h5>
+                <ul class="tag-list">
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">UI/UX</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">HTML5</a></li>
+                  <li><a href="#">CSS3</a></li>
+                  <li><a href="#">iOS</a></li>
+                </ul>
+              </div>
+              
+
+              <!-- Recent Posts - Widget -->
+              <div class="col-md-12 ws-s recent-posts-widget">
+                <h5 class="header-widget">Recent Posts</h5>
+
+                <!-- Item 1 -->
+                <div class="widget-item">
+                  <a href="#"><h6 class="h-alt">Blog Post Example</h6></a>
+                  <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="widget-item">
+                  <a href="#"><h6 class="h-alt">Another Blog Post Example</h6></a>
+                  <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="widget-item">
+                  <a href="#"><h6 class="h-alt">Blog Post Example</h6></a>
+                  <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
+                </div>
+
+              </div><!-- / .recent-posts-widget -->
+
+
+              <!-- Categories - Widget -->
+              <div class="col-md-12 ws-s categories-widget">
+                <h5 class="header-widget">Categories</h5>
+
+                <!-- Item 1 -->
+                <div class="widget-item">
+                  <a href="#">Web Design - <span>15</span></a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="widget-item">
+                  <a href="#">Graphic Design - <span>6</span></a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="widget-item">
+                  <a href="#">iOS Development - <span>12</span></a>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="widget-item">
+                  <a href="#">Other - <span>3</span></a>
+                </div>
+
+              </div><!-- / .categories-widget -->
+
+
+              <!-- Comments - Widget -->
+              <div class="col-md-12 ws-s comments-widget">
+                <h5 class="header-widget">Comments</h5>
+
+                <!-- Item 1 -->
+                <div class="widget-item">
+                  <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="widget-item">
+                  <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="widget-item">
+                  <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="widget-item">
+                  <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
+                </div>
+                
+              </div><!-- / .comments-widget -->
+
+
+              <!-- Text - Widget -->
+              <div class="col-md-12 text-widget">
+                <h5 class="header-widget">Text Widget</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui error, incidunt quia pariatur facere quasi totam inventore amet rerum.</p>
+              </div><!-- / .text-widget -->
+
+            </aside><!-- / .sidebar -->
+
+          </div><!-- / .row -->
+        </div><!-- / .container -->
+
+
+
+        <!-- ========== Footer ========== -->
+        
+    <!-- ========== Footer Widgets ========== -->
+    <div id="trigger3"></div>
+    <footer class="footer-widgets">
+    <div class="container">
+      <div class="row section">
+
+        <!-- About Us -->
+        <div class="col-md-4">
+          <div class="widget about-widget">
+            <h5 class="header-widget">Register</h5>
+            <a href="#joinus" class="btn btn-white-outline gray">Join Us Now</a>
+          </div><!-- / .widget -->
+        </div><!-- / .col-md-3 -->
+
+        <!-- Newsletter -->
+        <div class="col-md-4">
+          <div class="widget newsletter-widget">
+            <h5 class="header-widget">Keep me updated</h5>
+
+            <form action="post" id="newsletter_form_2">
+              <div class="form-group">
+                <input type="email" name="newsletter[email]" placeholder="JOIN OUR NEWSLETTER">
+                <button type="button" id="button-submit-2"><i class="fa fa-send-o"></i></button>
+              </div>
+            </form>
+			<p id="ty-2"  style="display: none">WE&apos;LL KEEP YOU UPDATED</p>
+          </div><!-- / .widget -->
+        </div><!-- / .col-md-4 -->
+
+
+        <!-- About Us -->
+        <div class="col-md-4">
+          <div class="widget about-widget">
+            <h5 class="header-widget">Contact</h5>
+            <p>8 EU TONG SEN ST.2<br/>#12-82<br/>THE CENTRAL<br/>SINGAPORE<br/>059818</p>
+          </div><!-- / .widget -->
+        </div><!-- / .col-md-3 -->
+        <h4 style="color:#8A8A8A; margin-left:1.67em">&copy; 2016 Yojee Pte. Ltd. All rights reserved.</h4>
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+    <div class="seaport">
+      <img  id="ship" class="ship" src="assets/images/backgrounds/port/ship_optimized.png" />
+    </div>
+    </footer><!-- / .footer-widgets -->
+
+    
+
+        <!-- ========== Scripts ========== -->
+
+        <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/vendor/google-fonts.js"></script>
+        <script src="assets/js/vendor/jquery.easing.js"></script>
+        <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="assets/js/vendor/smoothscroll.js"></script>
+        <script src="assets/js/vendor/jquery.localScroll.min.js"></script>
+        <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/vendor/jquery.stellar.min.js"></script>
+        <script src="assets/js/vendor/jquery.parallax.js"></script>
+        <script src="assets/js/vendor/slick.min.js"></script>
+        <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/vendor/countup.min.js"></script>
+        <script src="assets/js/vendor/isotope.min.js"></script>
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/vendor/wow.min.js"></script>
+
+		<!-- BV -->
+		<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
+		<script src="assets/js/vendor/animDots.js"></script>
+
+		<script src="assets/js/vendor/ScrollMagic.min.js"></script>
+		<script src="assets/js/vendor/animation.gsap.min.js"></script>
+		<script src="assets/js/vendor/animation.velocity.min.js"></script>
+		
+		<script src="assets/js/vendor/jquery.ScrollMagic.min.js"></script>
+
+		<script src="assets/js/vendor/TweenMax.min.js"></script>
+		<!-- BV -->
+		
+        <!-- Definity JS -->
+        <script src="assets/js/main.js"></script>
+		
+		<script>
+			$("#blogdynamic").load("dynamic/blogmain.php");
+		</script>
+
+    </body>
+</html>

@@ -161,7 +161,7 @@
             <form action="post" id="newsletter_form_2">
               <div class="form-group">
                 <input type="email" name="newsletter[email]" placeholder="JOIN OUR NEWSLETTER">
-                <button type="button" id="newsletter-bottom"><i class="fa fa-send-o"></i></button>
+                <button type="button" id="button-submit-2"><i class="fa fa-send-o"></i></button>
               </div>
             </form>
 			<p id="ty-2"  style="display: none">WE&apos;LL KEEP YOU UPDATED</p>
@@ -215,7 +215,7 @@
 		<script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 		<script src="/assets/js/vendor/jquery.ajaxchimp.js"></script>
-		<!-- BV <script src="/assets/js/vendor/animDots.js"></script> -->
+		<script src="/assets/js/vendor/animDots.js"></script>
 
 		<script src="/assets/js/vendor/ScrollMagic.min.js"></script>
 		<script src="/assets/js/vendor/animation.gsap.min.js"></script>
@@ -229,125 +229,6 @@
         <!-- Definity JS -->
         <script src="/assets/js/main.js"></script>
 		
-
-    <script>
-		
-			function postNewsLetter(f){
-var post = {
-"async": true,
-"crossDomain": true,
-"url": "https://yojee-webforms.herokuapp.com/api/newsletter",
-"method": "POST",
-"data":$("#newsletter_form").serialize(),
-}
-
-$.ajax(post).done(function(response){
-if(f != null){
-f(response);
-}
-});
-};
-
-
-function postNewsLetter2(f){
-var post = {
-"async": true,
-"crossDomain": true,
-"url": "https://yojee-webforms.herokuapp.com/api/newsletter",
-"method": "POST",
-"data":$("#newsletter_form_2").serialize(),
-}
-
-$.ajax(post).done(function(response){
-if(f != null){
-f(response);
-}
-});
-};
-
-$("#newsletter-top").on('click', function(){
-				var post = {
-			        "async": true,
-			        "crossDomain": true,
-			        "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
-			        "method": "POST",
-					"data":$("#newsletter_form").serialize(),
-			      };
-				$.ajax(post).done(function(response){
-					if(response.code == 0){
-						window.scrollTo(0,0);
-						alert('Thank you!');
-					}else{
-						alert(response.msg);						
-					}
-				});
-			});
-
-$("#newsletter-bottom").on('click', function(){
-				var post = {
-			        "async": true,
-			        "crossDomain": true,
-			        "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
-			        "method": "POST",
-					"data":$("#newsletter_form_2").serialize(),
-			      };
-				$.ajax(post).done(function(response){
-					if(response.code == 0){
-						window.scrollTo(0,0);
-						alert('Thank you!');
-					}else{
-						alert(response.msg);						
-					}
-				});
-			});
-
-$("#newsletter_form").submit(function(){
-postNewsLetter(function(response){
-if(response.code == 0){
-$("#newsletter_form").hide();
-$("#ty").show();
-$("#newsletter_form_2").hide();
-$("#ty-2").show();
-}else{
-alert(response.msg);
-}
-});
-});
-
-$("#newsletter_form_2").submit(function(){
-postNewsLetter2(function(response){
-if(response.code == 0){
-$("#newsletter_form").hide();
-$("#ty").show();
-$("#newsletter_form_2").hide();
-$("#ty-2").show();
-}else{
-alert(response.msg);
-}
-});
-});
-    </script>
-    
-    <script>
-        $("#button-submit").on('click', function(){
-        console.log('start');
-        var post = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://yojee-webforms.herokuapp.com/api/contact",
-        
-        "method": "POST",
-        "data":$("#data-form").serialize(),
-        };
-        $.ajax(post).done(function(response){
-        if(response.code == 0){
-        window.location.href='thank_you.html';
-        }else{
-        alert(response.msg);						
-        }
-        });
-        });
-      </script>
 
     </body>
 </html>
