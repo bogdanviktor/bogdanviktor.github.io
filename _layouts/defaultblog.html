@@ -172,16 +172,16 @@
         <!-- About Us -->
         <div class="col-md-4">
           <div class="widget about-widget">
-			<h5 class="header-widget">Contact</h5>
-						`	<p>51B/52B
-                            <br/>CIRCULAR ROAD
-                            <br/>SINGAPORE
-                            <br/>049406</p>
+	    <h5 class="header-widget">Contact</h5>
+	    <p>51B/52B
+            <br/>CIRCULAR ROAD
+            <br/>SINGAPORE
+            <br/>049406</p>
           </div><!-- / .widget -->
         </div><!-- / .col-md-3 -->
-			<h4><a href="http://sendyojee.com/terms">Terms of Use</a></h4>
-			<h4><a href="http://sendyojee.com/privacy">Privacy and Data Protection Policy</a></h4>
-        <h4>&copy; 2016 Yojee Pte. Ltd. All rights reserved.</h4>
+	<h4><span onclick="javascript:location.href='http://sendyojee.com/terms';" class='termsclass spanhover'>Terms of Use</span></h4> 
+	<h4><span onclick="javascript:location.href='http://sendyojee.com/privacy';" class='spanhover'>Privacy and Data Protection Policy</span></h4>
+        <h4>&copy; 2016 Yojee Pte. Ltd. All rights reserved</h4>
       </div><!-- / .row -->
     </div><!-- / .container -->
     <div class="seaport">
@@ -229,6 +229,125 @@
         <!-- Definity JS -->
         <script src="/assets/js/main.js"></script>
 		
+
+    <script>
+		
+			function postNewsLetter(f){
+var post = {
+"async": true,
+"crossDomain": true,
+"url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+"method": "POST",
+"data":$("#newsletter_form").serialize(),
+}
+
+$.ajax(post).done(function(response){
+if(f != null){
+f(response);
+}
+});
+};
+
+
+function postNewsLetter2(f){
+var post = {
+"async": true,
+"crossDomain": true,
+"url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+"method": "POST",
+"data":$("#newsletter_form_2").serialize(),
+}
+
+$.ajax(post).done(function(response){
+if(f != null){
+f(response);
+}
+});
+};
+
+$("#newsletter-top").on('click', function(){
+				var post = {
+			        "async": true,
+			        "crossDomain": true,
+			        "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+			        "method": "POST",
+					"data":$("#newsletter_form").serialize(),
+			      };
+				$.ajax(post).done(function(response){
+					if(response.code == 0){
+						window.scrollTo(0,0);
+						alert('Thank you!');
+					}else{
+						alert(response.msg);						
+					}
+				});
+			});
+
+$("#newsletter-bottom").on('click', function(){
+				var post = {
+			        "async": true,
+			        "crossDomain": true,
+			        "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+			        "method": "POST",
+					"data":$("#newsletter_form_2").serialize(),
+			      };
+				$.ajax(post).done(function(response){
+					if(response.code == 0){
+						window.scrollTo(0,0);
+						alert('Thank you!');
+					}else{
+						alert(response.msg);						
+					}
+				});
+			});
+
+$("#newsletter_form").submit(function(){
+postNewsLetter(function(response){
+if(response.code == 0){
+$("#newsletter_form").hide();
+$("#ty").show();
+$("#newsletter_form_2").hide();
+$("#ty-2").show();
+}else{
+alert(response.msg);
+}
+});
+});
+
+$("#newsletter_form_2").submit(function(){
+postNewsLetter2(function(response){
+if(response.code == 0){
+$("#newsletter_form").hide();
+$("#ty").show();
+$("#newsletter_form_2").hide();
+$("#ty-2").show();
+}else{
+alert(response.msg);
+}
+});
+});
+    </script>
+    
+    <script>
+        $("#button-submit").on('click', function(){
+        console.log('start');
+        var post = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://yojee-webforms.herokuapp.com/api/contact",
+        
+        "method": "POST",
+        "data":$("#data-form").serialize(),
+        };
+        $.ajax(post).done(function(response){
+        if(response.code == 0){
+        window.location.href='thank_you.html';
+        }else{
+        alert(response.msg);						
+        }
+        });
+        });
+      </script>
 
     </body>
 </html>
