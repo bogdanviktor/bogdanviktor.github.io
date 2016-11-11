@@ -149,7 +149,7 @@ redirect_from: "/carriers"
                 </div>
 
                 <div class="form-group">
-                  <input id="button-submit" type="submit" class="btn-text" value="SUBMIT">
+                  <input id="button-submit" type="button" class="btn-text" value="SUBMIT">
                   <!--<input id="submit-form" type="button" class="btn-text demo-submit" value="SUBMIT">-->
                   <!--                        <input type="submit" class="btn-text" value="SUBMIT">-->
                 </div>
@@ -215,22 +215,22 @@ redirect_from: "/carriers"
       <!-- script -->
       <script>
         $("#button-submit").on('click', function(){
-        console.log('start');
-        var post = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://yojee-webforms.herokuapp.com/api/carrier",
-        //"url": "http://bot.akomba.com:8081/carrier",
-        "method": "POST",
-        "data":$("#data-form").serialize(),
-        };
-        $.ajax(post).done(function(response){
-        if(response.code == 0){
-        window.location.href='thank_you.html';
-        }else{
-        alert(response.msg);						
-        }
-        });
+			console.log('start');
+			var post = {
+				"async": true,
+				"crossDomain": true,
+				"url": "https://yojee-webforms.herokuapp.com/api/carrier",
+				//"url": "http://bot.akomba.com:8081/carrier",
+				"method": "POST",
+				"data":$("#data-form").serialize(),
+			};
+			$.ajax(post).done(function(response){
+				if(response.code == 0){
+					window.location.href='thank_you.html';
+				} else {
+					alert(response.msg);						
+				}
+			});
         });
       </script>
     </body>
