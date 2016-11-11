@@ -183,7 +183,7 @@ redirect_from: "/senders"
 			        // "url": "http://bot.akomba.com:8081/sender",
 			        "method": "POST",
 					"data":$("#data-form").serialize(),
-			      };
+			    };
 				$.ajax(post).done(function(response){
 					if(response.code == 0){
 						window.location.href='thank_you.html';
