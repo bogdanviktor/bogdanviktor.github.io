@@ -55,6 +55,13 @@
         <li class="active"><a href="#">Home<span class="sr-only"></span></a></li>
         <li><a href="/investors.html">investors<span class="sr-only"></span></a></li>
         <li><a href="/blog/">blog<span class="sr-only"></span></a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">FAQ<span class="sr-only"></span></a>
+        <ul class="dropdown-menu" style="opacity:1">
+          <li><a href="/cfaq" style="color:black">Customer (Sender) FAQ</a></li>
+          <li><a href="/faq" style="color:black">Delivery Partner FAQ</a></li>
+        </ul>
+        </li>
         <li><a href="/contact.html">contact us<span class="sr-only"></span></a></li>
         <li>
           <form action="https://yojee-webforms.herokuapp.com/api/newsletter" method="post" id="newsletter_form">
@@ -94,10 +101,14 @@
             <div id="trigger" style="position: absolute;top: 50%;height:1px;background: red;z-index: 500;"></div>
             <div class="hero-content">
 
-              <img class="biglogo" src="assets/images/yojee_logo_optimized.png" alt="Yojee" height="200">
-              <h1 class="hero-lead nunito_bold">COLLABORATIVE ECONOMY LOGISTICS</h1>
-              <h4 class="h-alt hero-secondary">Just click and send. Yojee delivers.</h4>
-              <a href="#joinus" class="btn btn-white-outline">Join Us Now</a>
+              <img class="biglogo" src="assets/images/newhero/hellologo.png" alt="Hello Singapore!" >
+              <h3 class="h-alt hero-secondary">HELLO SINGAPORE! WE'RE OPEN!</h3> 
+              <!-- 
+			  <h2 class="hero-lead nunito_bold">HELLO SINGAPORE! WE'RE OPEN!</h2>
+              <h4 class="h-alt hero-secondary">Just click and send. Yojee delivers.</h4> 
+			  -->
+              <a href="https://order.sendyojee.com/" class="btn btn-white-outline">SEND</a>
+              <a href="https://driver.sendyojee.com/" class="btn btn-white-outline registermargin">REGISTER AS DELIVERY PARTNER</a>
 
               <!-- Scroller -->
               <a href="#whyus" class="scroller">
@@ -108,17 +119,15 @@
           </div><!-- / .hero-content-wrapper -->
         </div><!-- / #large-header -->
         <div id="home_anim">
+<!-- BV
           <img class="sun" src="assets/images/backgrounds/home_anim_elements/sun.png" />
-
           <img id="cloud1" class="cloud2" src="assets/images/backgrounds/home_anim_elements/clouds_double.png" />
           <img id="cloud2" class="cloud3" src="assets/images/backgrounds/home_anim_elements/cloud_small.png" />
           <img id="cloud3" class="cloud4" src="assets/images/backgrounds/home_anim_elements/cloud_big.png" />
-
-
-          <!-- <img class="mountains" src="assets/images/backgrounds/home_anim_elements/mountains_right.png" />-->
+		 
           <img class="mountains-depo" src="assets/images/backgrounds/home_anim_elements/mountain-behind-depo.png" />
           <img class="depo" src="assets/images/backgrounds/home_anim_elements/depo_left_optimized.png" />
-          <img class="city" src="assets/images/backgrounds/home_anim_elements/city_optimized.png" />
+          <img class="city" src="assets/images/backgrounds/home_anim_elements/city_optimized.png" /> -->
           <div class="road"></div>
 
           <img id="truck" class="bigtruck" src="assets/images/backgrounds/home_anim_elements/truck01_bigger_optimized.png" />
@@ -141,19 +150,24 @@
 
       <div class="col-md-4">
 
-        <img src="assets/images/circle_icon_realtime_tracking.png" />
-        <h3 class="c-text nunito_bold">Cost Efficiency</h3>
-        <p>With 105 million online buyers across 8 countries within reach, our big data driven platform will be a unique solution to achieve operational efficiency and maximise revenue in a sector straining to support the online purchasing boom through simple to use software that optimises fleets and is affordable to attain.</p>
+        <img src="assets/images/newicon/icon-01.png" />
+        <h3 class="c-text nunito_bold">Incredibly smart, deceptively simple</h3>
+        <p>Yojee has hidden industry changing intelligence and automation, including routing and clustering algorithms and machine learning to provide more accurate and real time information to carriers, senders and recipients behind the simplest to use and most beautiful interfaces. We take pride in creating something anyone can pick up and use.
+		   <br><br>"Smart features hidden within easy-to-use yet beautiful interfaces.  Yojee algorithms provide accurate, dynamic information to carriers, senders and recipients alike.  We take pride in creating user-friendly software." 
+        </p>
       </div>
       <div class="col-md-4">
-        <img src="assets/images/circle_icon_globe.png" />
-        <h3 class="c-text nunito_bold">Reach and Opportunity</h3>
-        <p> We will connect and enable logistics providers with limited geographical capability to collaborate with a wider network for greater in-territory revenue and opportunity to participate in sectors traditionally where access was not available. Yojee will also enable e-commerce companies to move into new countries and markets through efficient supply chains.</p>
+        <img src="assets/images/newicon/icon-03.png" />
+        <h3 class="c-text nunito_bold">Costumer joy</h3>
+        <p>Yojees enables a new way for customers to book, control and communicate. Delivery windows of minutes not hours with countdown timers and real time tracking. Book a delivery from the app, or traditional messenger apps such as Whatsapp or WeChat.
+		   <br><br>"Convenience, Control & Communication: a new approach to customer satisfaction.  Countdown timers and real-time tracking offer delivery windows to the minute.  Choose when, where and how you receive deliveries using in-app or both channels within popular messaging apps.”
+		</p>
       </div>
       <div class="col-md-4">
-        <img src="assets/images/circle_icon_bicycle.png" />
-        <h3 class="c-text nunito_bold">Tracking and Trust</h3>
-        <p>Yojee is implementing high resolution real-time tracking and a hybrid traditional plus blockchain technology payment system to achieve a greater level of transparency, security and trust. Yojee will provide more convenient deliveries, less waiting and new opportunities for the 70% of Asia who are unbanked.</p>
+        <img src="assets/images/newicon/icon-02.png" />
+        <h3 class="c-text nunito_bold">Logistic Reimagined</h3>
+        <p>Yojee's unique ecosystem moves you beyond the basics. We democratise logistics technology by enabling enhanced management, movement and scalability. We provide everyone with access to reliable, cost effective services, giving you and your business an operational- and financial edge. 
+		</p>
 
       </div>
     </div><!-- / .row -->
@@ -239,7 +253,7 @@
               <p>For businesses interested in additional revenue, optimised fleets and world class technology.</p>
 
               <!-- Link -->
-              <a href="form_carrier.html" class="btn btn-outline">Join Us Now</a>
+              <a href="https://carrier.sendyojee.com/" class="btn btn-outline">Join Us Now</a>
 
             </div><!-- / .jb-content -->
           </div><!-- / .blog-post -->
@@ -261,7 +275,7 @@
               <p>For individuals and companies looking to cost effectively move things around Australia and South East Asia.</p>
 
               <!-- Link -->
-              <a href="form_sender.html" class="btn btn-outline">Join Us Now</a>
+              <a href="https://sender.sendyojee.com/" class="btn btn-outline">Join Us Now</a>
 
             </div><!-- / .jb-content -->
 
@@ -284,7 +298,7 @@
               <p>For companies focused on the last mile delivery process. Uberfy and optimise with our world class technology and get access to additional delivery revenue.</p>
 
               <!-- Link -->
-              <a href="form_lastmile.html" class="btn btn-outline">Join Us Now</a>
+              <a href="https://lastmile.sendyojee.com/" class="btn btn-outline">Join Us Now</a>
 
             </div><!-- / .jb-content -->
 
@@ -337,7 +351,8 @@
           </div><!-- / .widget -->
         </div><!-- / .col-md-3 -->
         <!--<div class="widget terms-widget">-->
-			<h4><span onclick="javascript:location.href='http://sendyojee.com/terms';" class='spanhover'>Terms of Use</span></h4> 
+			<h4><span onclick="javascript:location.href='http://sendyojee.com/terms';" class='spanhover'>Terms of Use</span></h4>
+                        <!--<h4><span onclick="javascript:location.href='http://sendyojee.com/faq';" class='spanhover'>Delivery Partner FAQs</span></h4> -->
 			<h4><span onclick="javascript:location.href='http://sendyojee.com/privacy';" class='spanhover'>Privacy and Data Protection Policy</span></h4> 
 			<!--<h4><a href="http://sendyojee.com/terms">Terms of Use</a></h4>
 			<h4><a href="http://sendyojee.com/privacy">Privacy and Data Protection Policy</a></h4>

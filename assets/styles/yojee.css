@@ -201,7 +201,7 @@
 
 
 img.biglogo{
-    width: 25vw;
+    width: 65vw;
     min-width: 190px; /*250px*/
     height: initial;
 }
@@ -615,6 +615,10 @@ section#contact{
   margin-top: 25px;
   margin-bottom: 30px;
   padding-bottom:0;
+}
+
+#joinus .sec-heading {
+  margin-bottom: 70px;
 }
 
 #video_overlay{
@@ -1394,4 +1398,22 @@ footer h4 a {
   margin-left: 1em;
   word-wrap: normal;
   list-style-position: outside;
+}
+
+#sletable td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#whyus h3 {
+	height:45px;
+}
+
+#home h3 {
+	font-size:29px;
+	letter-spacing:4px;
+}
+
+.registermargin {
+	margin-left:20px;
 }

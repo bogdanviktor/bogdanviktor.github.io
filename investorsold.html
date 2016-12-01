@@ -45,9 +45,10 @@
 
 
     <!-- ========== Preloader ========== -->
+
     <div class="preloader">
         <img src="assets/images/loader.svg" alt="Loading...">
-    </div> 
+    </div>
 
     <!-- ========== Navigation ========== -->
 
@@ -69,13 +70,6 @@
                 <li><a href="/index.html">Home<span class="sr-only"></span></a></li>
                 <li class="active"><a href="/investors.html">investors<span class="sr-only"></span></a></li>
 		        <li><a href="/blog/">blog<span class="sr-only"></span></a></li>
-                        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">FAQ<span class="sr-only"></span></a>
-        <ul class="dropdown-menu" style="opacity:1">
-          <li><a href="/cfaq" style="color:black">Customer (Sender) FAQ</a></li>
-          <li><a href="/faq" style="color:black">Delivery Partner FAQ</a></li>
-        </ul>
-        </li>
                 <li><a href="/contact.html">contact us<span class="sr-only"></span></a></li>
                 <li>
                     <form action="https://yojee-webforms.herokuapp.com/api/newsletter" method="post" id="newsletter_form">
@@ -123,7 +117,8 @@
                 <div class="blog-post blog-post-bv wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
 					<!-- Image -->
 
-					<div id="bv-vidcontainer" style="width:100%" class="vidcontainer">
+					<div style="width:100%" class="vidcontainer">
+						<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>
 					</div>
 
 					<div class="bp-content">
@@ -152,7 +147,7 @@
             <div class="col-md-6" style="margin:0 auto;float:none;clear:both;">
                 <h4>Investor Relations</h4>
                 <ul>
-                <li class='clickmark'><a href="announcements.html">ASX Announcements</a></li>
+                    <li class='clickmark'><a href="announcements.html" target="_blank">ASX Announcements</a></li>
 <!--			
                     <li class='clickmark'><a href="https://docs.google.com/document/d/1TZeE9DyBxTT1vDg_hYMnTI6K-7EY1xq7evuCYXRePAQ/pub" target="_blank">Annual Reports</a></li>
                     <li class='clickmark'><a href="https://docs.google.com/document/d/16os7fHr3BXrFmofDh4I9oOdfbaIVSO9cI5WU5fsZFsA/pub" target="_blank">Quarterly Reports</a></li>
@@ -214,20 +209,17 @@
                 </div>
                 <!-- / .col-md-4 -->
 
-        <!-- About Us -->
-        <div class="col-md-4">
-          <div class="widget about-widget">
-            <h5 class="header-widget">Contact</h5>
-            <p>51B/52B
-                            <br/>CIRCULAR ROAD
-                            <br/>SINGAPORE
-                            <br/>049406</p>
-          </div><!-- / .widget -->
-        </div><!-- / .col-md-3 -->
-        <h4><span onclick="javascript:location.href='http://sendyojee.com/terms';" class='spanhover'>Terms of Use</span></h4>
-        <!--<h4><span onclick="javascript:location.href='http://sendyojee.com/faq';" class='spanhover'>Delivery Partner FAQs</span></h4> -->
-	<h4><span onclick="javascript:location.href='http://sendyojee.com/privacy';" class='spanhover'>Privacy and Data Protection Policy</span></h4>
-        <h4>&copy; 2016 Yojee Pte. Ltd. All rights reserved</h4>
+
+                <!-- About Us -->
+                <div class="col-md-4">
+                    <div class="widget about-widget">
+                        <h5 class="header-widget">Contact</h5>
+                        <p>8 EU TONG SEN ST.2<br/>#12-82<br/>THE CENTRAL<br/>SINGAPORE<br/>059818</p>
+                    </div>
+                    <!-- / .widget -->
+                </div>
+                <!-- / .col-md-3 -->
+                <h4 style="color:#8A8A8A; margin-left:1.67em">&copy; 2016 Yojee Pte. Ltd. All rights reserved.</h4>
             </div>
             <!-- / .row -->
         </div>
@@ -284,10 +276,120 @@
     <!-- Definity JS -->
     <script src="assets/js/main.js"></script>
 
-    <!-- BV -->
-	<script src="assets/js/defaultscripts.js"></script>
+	<script>
+	    $(".vidcontainer").fitVids();
+		
+        function postNewsLetter(f) {
+            var post = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+                "method": "POST",
+                "data": $("#newsletter_form").serialize(),
+            }
+            $.ajax(post).done(function(response) {
+                if (f != null) {
+                    f(response);
+                }
+            });
+        };
 
-	<!-- BV not used 12.10.2016
+        function postNewsLetter2(f) {
+            var post = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+                "method": "POST",
+                "data": $("#newsletter_form_2").serialize(),
+            }
+            $.ajax(post).done(function(response) {
+                if (f != null) {
+                    f(response);
+                }
+            });
+        };
+
+        $("#newsletter-top").on('click', function() {
+            var post = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+                "method": "POST",
+                "data": $("#newsletter_form").serialize(),
+            };
+            $.ajax(post).done(function(response) {
+                if (response.code == 0) {
+                    window.scrollTo(0, 0);
+                    alert('Thank you!');
+                } else {
+                    alert(response.msg);
+                }
+            });
+        });
+
+        $("#newsletter-bottom").on('click', function() {
+            var post = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://yojee-webforms.herokuapp.com/api/newsletter",
+                "method": "POST",
+                "data": $("#newsletter_form_2").serialize(),
+            };
+            $.ajax(post).done(function(response) {
+                if (response.code == 0) {
+                    window.scrollTo(0, 0);
+                    alert('Thank you!');
+                } else {
+                    alert(response.msg);
+                }
+            });
+        });
+
+        $("#newsletter_form").submit(function() {
+            postNewsLetter(function(response) {
+                if (response.code == 0) {
+                    $("#newsletter_form").hide();
+                    $("#ty").show();
+                    $("#newsletter_form_2").hide();
+                    $("#ty-2").show();
+                } else {
+                    alert(response.msg);
+                }
+            });
+        });
+
+        $("#newsletter_form_2").submit(function() {
+            postNewsLetter2(function(response) {
+                if (response.code == 0) {
+                    $("#newsletter_form").hide();
+                    $("#ty").show();
+                    $("#newsletter_form_2").hide();
+                    $("#ty-2").show();
+                } else {
+                    alert(response.msg);
+                }
+            });
+        });
+    </script>
+
+    <!-- Google Analytics Tracking Code -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-75173327-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
     <script>
         $('#i1').load("https://docs.google.com/document/d/1Qn1c865nSRp5BP3NHoekIHnmgcC4G6lFMMzEDKcDlZ0/pub", function() {
             alert("loadded");
@@ -295,7 +397,6 @@
         $('#i2').load("https://docs.google.com/document/d/1TZeE9DyBxTT1vDg_hYMnTI6K-7EY1xq7evuCYXRePAQ/pub");
         $('#i3').load("https://docs.google.com/document/d/16os7fHr3BXrFmofDh4I9oOdfbaIVSO9cI5WU5fsZFsA/pub");
     </script>
--->
 
 </body>
 

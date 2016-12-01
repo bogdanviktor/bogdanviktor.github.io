@@ -68,9 +68,9 @@
         <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
             <ul class="nav navbar-nav">
                 <li><a href="/index.html">Home<span class="sr-only"></span></a></li>
-                <li class="active"><a href="/investors.html">investors<span class="sr-only"></span></a></li>
+                <li><a href="/investors.html">investors<span class="sr-only"></span></a></li>
 		        <li><a href="/blog/">blog<span class="sr-only"></span></a></li>
-			<li class="dropdown">
+			<li class="active dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">FAQ<span class="sr-only"></span></a>
         <ul class="dropdown-menu" style="opacity:1">
           <li><a href="/cfaq" style="color:black">Customer (Sender) FAQ</a></li>
@@ -97,20 +97,11 @@
     <!-- / .navbar -->
 
 
-    <!-- ========== Investors - Section ========== -->
+    <!-- ========== Legal - Section ========== -->
 
-    <section id="investors" class="container blog-classic">
+    <section class="container blog-classic">
         <div class="row">
-
-            <header class="sec-heading">
-                <h2 class="nunito_bold">{{ page.heading }}</h2>
-                {%if page.subheading %}
-				<span class="subheading">{{ page.subheading }}</span>
-				{% endif %}
-            </header>
-			
 			{{ content }}
-
         </div>
         <!-- / .row -->
 
@@ -165,10 +156,10 @@
 
     <!-- Definity JS -->
     <script src="assets/js/main.js"></script>
-
-    <!-- BV -->
-	<script src="assets/js/defaultscripts.js"></script>
 	
+    <!-- BV -->
+    <script src="assets/js/defaultscripts.js"></script>
+
 </body>
 
 </html>

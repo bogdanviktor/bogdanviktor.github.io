@@ -7718,7 +7718,8 @@ form .input-error-2:focus {
 .agency2-hero {
   background: url(../images/backgrounds/home.jpg);
   background-size: cover;
-  background-position: 50%;
+  /*  background-position: 50%; REPLACED BY BV */
+  background-position:center bottom ;
   background-attachment: fixed;
 }
 
@@ -7793,8 +7794,12 @@ form .input-error-2:focus {
   margin-top: 50px;
 }
 
-.agency2-hero .hero-content-wrapper .hero-content img {
+.agency2-hero .hero-content-wrapper {
   margin-bottom: 50px;
+}
+
+.hero-content img {
+  margin-bottom: 25px;
 }
 
 /* ---- 20.9 Animated Heading ---- */
