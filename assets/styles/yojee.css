@@ -1408,7 +1408,7 @@ footer h4 a {
 /* BV from here */  
 
 #whyus h3 {
-	height:45px;
+	min-height:45px;
 }
 
 .herobuttonmargin {
