@@ -239,7 +239,8 @@ img.biglogo{
     width: 100%;
     bottom: 0;
     left: 0;
-    background: url(../images/backgrounds/home_anim_elements/bg.png);
+    /* the gradient back on hero
+	background: url(../images/backgrounds/home_anim_elements/bg.png); */
     background-size: contain;
     background-repeat: repeat-x;
 }
