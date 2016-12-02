@@ -937,9 +937,12 @@
   .agency2-hero .hero-content-wrapper .hero-content .btn {
     margin-top: 25px;
   }
+/* BV
   .agency2-hero .hero-content-wrapper .hero-content img {
-    margin-bottom: 50px;
-  }
+    margin-bottom: 50px; 
+	}
+  */
+  
   .app-hero .hero-text .hero-lead {
     font-size: 2.5em;
     letter-spacing: 5px;
@@ -957,6 +960,7 @@
     font-size: 50px;
     letter-spacing: 5px;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -1031,6 +1035,8 @@
   .app-hero .scroller {
     display: none;
   }
+
 }
 
 /*# sourceMappingURL=responsive.css.map */
+

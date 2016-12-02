@@ -202,7 +202,7 @@
 
 img.biglogo{
     width: 65vw;
-    min-width: 190px; /*250px*/
+    min-width: 320px; 
     height: initial;
 }
 
@@ -1405,8 +1405,14 @@ footer h4 a {
   border: 1px solid black;
 }
 
+/* BV from here */  
+
 #whyus h3 {
 	height:45px;
+}
+
+.herobuttonmargin {
+	margin-right:20px;
 }
 
 #home h3 {
@@ -1414,6 +1420,42 @@ footer h4 a {
 	letter-spacing:4px;
 }
 
-.registermargin {
-	margin-left:20px;
+.register2 {
+	display:none ;  
 }
+
+@media (max-width: 770px) {
+  #home h3 {
+		font-size:17px;
+		letter-spacing:1px;
+		margin-top:0;
+  }
+  
+  .herobuttons {
+		width:250px;
+  } 
+  
+  .btn-white-outline {
+		font-size:10px !important;
+  }
+  
+  .register1 {
+	display:none ;  
+  }
+
+  .register2 {
+	display:inline-block ;  
+  }
+  
+  .herobuttonmargin {
+		margin-right:0px;
+  }
+  
+}
+
+@media (max-width: 350px) {
+	img.biglogo {
+		min-width: 250px; 
+	}
+}
+
