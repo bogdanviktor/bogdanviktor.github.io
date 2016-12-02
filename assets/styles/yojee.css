@@ -321,7 +321,7 @@ img.biglogo{
     left: 0;
     height:1.5vw;
     width: 100%;
-    background: url(../images/backgrounds/home_anim_elements/road.png);
+/*    background: url(../images/backgrounds/home_anim_elements/road.png); */
     background-size: contain;
     background-repeat: repeat-x;
 }
