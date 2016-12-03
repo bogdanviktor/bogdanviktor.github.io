@@ -286,12 +286,20 @@ img.biglogo{
     bottom: 4.5vw;
 }
 
-.cloud3{
+.cloud3old {
     position: absolute;
     max-height: 50%;
     height:20%;
     right: 38vw;
     bottom: 5vw;
+}
+
+.cloud3 {
+    position: absolute;
+    max-height: 100%;
+    height:100%;
+    right: 25vw; 
+    bottom: 1.5vw;
 }
 
 .cloud4{
@@ -301,6 +309,7 @@ img.biglogo{
     right: 6vw;
     bottom: 5.5vw;
 }
+
 
 .mountains{
     position: absolute;
@@ -320,7 +329,7 @@ img.biglogo{
 
 .depo{
     position: absolute;
-    height: 28%;
+    height: 38%;
     left: 0;
     bottom: 1.5vw;
 }
