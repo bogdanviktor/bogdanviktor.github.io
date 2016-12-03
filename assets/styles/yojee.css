@@ -329,7 +329,7 @@ img.biglogo{
 
 .depo{
     position: absolute;
-    height: 38%;
+    height: 30%;
     left: 0;
     bottom: 1.5vw;
 }
@@ -356,7 +356,7 @@ img.biglogo{
 
 .bigtruck{
     position: absolute;
-    height: 35%;
+    height: 30%;
     right: 40%;
     bottom: 0.5vw;
 }
