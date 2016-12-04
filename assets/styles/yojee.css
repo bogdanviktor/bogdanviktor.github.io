@@ -256,17 +256,17 @@ img.biglogo{
 
 .sir-raffles {
     position: absolute;
-    max-height: 55%;
-    height:55%;
+    max-height: 58%;
+    height:58%;
     left: 38vw;
     bottom: 1.5vw;
 }
 
 .merlion {
     position: absolute;
-    max-height: 40%;
-    height:40%;
-    right:26vw;
+    max-height: 45%;
+    height:45%;
+    right:33vw;
     bottom: 1.5vw;
 }
 
@@ -329,7 +329,7 @@ img.biglogo{
 
 .depo{
     position: absolute;
-    height: 30%;
+    height: 33%;
     left: 0;
     bottom: 1.5vw;
 }
@@ -337,7 +337,7 @@ img.biglogo{
 
 .city{
     position: absolute;
-    height: 90%;
+    height: 106%;
     right: 0;
     bottom: 1.5vw;
 }
@@ -1444,8 +1444,10 @@ footer h4 a {
 }
 
 #home h3 {
-	font-size:29px;
+	font-size:45px;
 	letter-spacing:4px;
+	font-family: "Open Sans","Helvetica Neue" ;
+	font-weight:500;
 }
 
 .register2 {
