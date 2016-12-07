@@ -204,7 +204,7 @@ img.biglogo{
     width: 65vw;
     min-width: 320px; 
     height: initial;
-	margin-bottom:30px;
+	margin-bottom:0px;
 }
 
 
@@ -449,6 +449,10 @@ div.icon{
 
 .icon.lastmile{
   background-image: url(../images/icon_lastmile_n.png);
+}
+
+.icon.software{
+  background-image: url(../images/icon_software_n.png);
 }
 
 .blog-post{
@@ -1457,6 +1461,13 @@ footer h4 a {
 	font-weight:500; */
 }
 
+.biggerbutton {
+	font-size:23px !important;		
+	padding: 10px 40px;
+	border: 2px solid #FFFFFF;
+	letter-spacing:3px;
+}
+
 .register2 {
 	display:none ;  
 }
@@ -1477,7 +1488,7 @@ footer h4 a {
   }
   
   .register1 {
-	display:none ;  
+	display:none ;
   }
 
   .register2 {
