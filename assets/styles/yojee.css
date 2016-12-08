@@ -452,7 +452,7 @@ div.icon{
 }
 
 .icon.software{
-  background-image: url(../images/icon_software_n.png);
+  background-image: url(../images/icon_software_n.png);33333333333333333
 }
 
 .blog-post{
@@ -1511,4 +1511,13 @@ footer h4 a {
 	margin:0 25px;
 	margin-top:40px;
 	height:60px;
+}
+
+#invheader {
+	margin-top:19vw ;
+	margin-bottom:20px;	
+}
+
+#invsecondary {
+	letter-spacing:5px;
 }

@@ -7723,6 +7723,15 @@ form .input-error-2:focus {
   background-attachment: fixed;
 }
 
+
+.investors-hero {
+  background: url(../images/backgrounds/investors_bg.jpg);
+  background-size: cover;
+  background-position:center bottom ;
+  background-attachment: fixed;
+}
+
+
 .services-hero{
   background-image: url(../images/backgrounds/services.jpg);
 }
