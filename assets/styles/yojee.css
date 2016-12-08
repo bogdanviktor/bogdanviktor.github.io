@@ -1479,6 +1479,16 @@ footer h4 a {
 	padding-right:15px;
 }
 
+.agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
+	margin-top:0;
+	/*
+	font-size:16px !important;		
+	padding: 10px 40px;
+	border: 2px solid #FFFFFF;
+	letter-spacing:3px;
+	*/
+}
+
 @media (max-width: 770px) {
 	#home h3 {
 		font-size:17px;
@@ -1518,7 +1528,10 @@ footer h4 a {
 	.herobuttonmargin {
 		margin-right:0px;
 	}
-  
+	.agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
+		margin-top:25px;
+	}
+
 }
 
 @media (max-width: 350px) {
@@ -1582,14 +1595,4 @@ footer h4 a {
 	position: absolute;
     bottom: 0;
 	padding-bottom:50px;
-}
-
-.agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
-	margin-top:0;
-	/*
-	font-size:16px !important;		
-	padding: 10px 40px;
-	border: 2px solid #FFFFFF;
-	letter-spacing:3px;
-	*/
 }
