@@ -1469,32 +1469,55 @@ footer h4 a {
 	display:none ;  
 }
 
+.videomobile {
+	display:none ;
+}
+
+.fullwidth {
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+}
+
 @media (max-width: 770px) {
-  #home h3 {
+	#home h3 {
 		font-size:17px;
 		letter-spacing:1px;
 		margin-top:0;
-  }
-  
-  .herobuttons {
-		width:250px;
-  } 
-  
-  .btn-white-outline {
-		font-size:10px !important;
-  }
-  
-  .register1 {
-	display:none ;
-  }
+	}
 
-  .register2 {
-	display:inline-block ;  
-  }
-  
-  .herobuttonmargin {
+	.herobuttons {
+		width:250px;
+	} 
+
+	.btn-white-outline {
+		font-size:10px !important;
+	}
+
+	.register1 {
+		display:none ;
+	}
+
+	.register2 {
+		display:inline-block ;  
+	}
+
+	.videofull {
+		display:none ;
+	}
+
+	.videomobile {
+		display:block ;
+	}
+
+	.fullwidth {
+		padding-left:30px;
+		padding-right:30px;
+	}
+
+	.herobuttonmargin {
 		margin-right:0px;
-  }
+	}
   
 }
 
@@ -1559,12 +1582,6 @@ footer h4 a {
 	position: absolute;
     bottom: 0;
 	padding-bottom:50px;
-}
-
-.fullwidth {
-	width:100%;
-	padding-left:0;
-	padding-right:0;
 }
 
 .agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
