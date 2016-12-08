@@ -1529,21 +1529,22 @@ footer h4 a {
 
 .tmp {
 	width:60%;
+	padding-top:8px;
+	padding-left:8px;
 	display:inline-block;
 }
 
 .tmp2 {
-	width:35%;
+	width:39%;
 	display:inline-block;
 	vertical-align:top;
-	padding:10px;
-	background-color:#FF0000 ;
+	padding-top:5px;
+/*	background-color:#FF0000 ;*/
  
     min-height: 100%; /* Minimum height for modern browsers */
     height:100%; /* Minimum height for IE */ 
     position:absolute;
     overflow:hidden;
-    border:1px solid blue;
 }
 
 .tmp3 {
@@ -1556,3 +1557,8 @@ footer h4 a {
 	margin-bottom:100px;
 }
 
+.bottomh1 {
+	position: absolute;
+    bottom: 0;
+	padding-bottom:50px;
+}

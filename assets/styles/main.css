@@ -5914,6 +5914,10 @@ fieldset[disabled] .form-control:hover {
   padding: 40px 50px 50px 50px;
 }
 
+.blog-classic .blog-post .investors-videoblog-padding {
+  padding: 30px 40px;
+}
+
 .blog-columns .blog-post .bp-content .post-meta .post-date i,
 .blog-classic .blog-post .bp-content .post-meta .post-date i,
 .blog-columns .blog-post .bp-content .post-meta .post-comments i, .blog-classic .blog-post .bp-content .post-meta .post-comments i {
