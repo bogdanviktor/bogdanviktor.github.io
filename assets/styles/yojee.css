@@ -1537,8 +1537,22 @@ footer h4 a {
 	display:inline-block;
 	vertical-align:top;
 	padding:10px;
+	background-color:#FF0000 ;
+ 
+    min-height: 100%; /* Minimum height for modern browsers */
+    height:100%; /* Minimum height for IE */ 
+    position:absolute;
+    overflow:hidden;
+    border:1px solid blue;
 }
 
 .tmp3 {
 	width:100%;
 }
+
+.videopost {
+	padding-left:0 ;
+	padding-right:0 ;
+	margin-bottom:100px;
+}
+
