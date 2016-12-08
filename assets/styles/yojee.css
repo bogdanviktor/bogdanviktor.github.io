@@ -1523,6 +1523,22 @@ footer h4 a {
 }
 
 .invheadline {
-	font-size:21px;
+	font-size:28px;
 	font-weight:350;
+}
+
+.tmp {
+	width:60%;
+	display:inline-block;
+}
+
+.tmp2 {
+	width:35%;
+	display:inline-block;
+	vertical-align:top;
+	padding:10px;
+}
+
+.tmp3 {
+	width:100%;
 }
