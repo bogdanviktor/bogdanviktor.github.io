@@ -1521,3 +1521,8 @@ footer h4 a {
 #invsecondary {
 	letter-spacing:5px;
 }
+
+.invheadline {
+	font-size:21px;
+	font-weight:400;
+}
