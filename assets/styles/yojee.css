@@ -205,6 +205,7 @@ img.biglogo{
     min-width: 320px; 
     height: initial;
 	margin-bottom:0px;
+	padding-top:50px;
 }
 
 
@@ -513,6 +514,9 @@ div.icon{
 }
 .blog-post:hover .lastmile{
   background-image: url(../images/icon_lastmile_s.png);
+}
+.blog-post:hover .software{
+  background-image: url(../images/icon_software_s.png);
 }
 
 .blog-post:hover .jb-content h2, .blog-post:hover .jb-content h4, .blog-post:hover .jb-content p{
@@ -1461,13 +1465,6 @@ footer h4 a {
 	font-weight:500; */
 }
 
-.biggerbutton {
-	font-size:16px !important;		
-	padding: 10px 40px;
-	border: 2px solid #FFFFFF;
-	letter-spacing:3px;
-}
-
 .register2 {
 	display:none ;  
 }
@@ -1514,17 +1511,18 @@ footer h4 a {
 }
 
 #invheader {
-	margin-top:19vw ;
 	margin-bottom:20px;	
 }
 
 #invsecondary {
 	letter-spacing:5px;
+	margin-bottom:80px;	
 }
 
 .invheadline {
-	font-size:28px;
+	font-size:16px;
 	font-weight:350;
+	padding:0 15px;
 }
 
 .tmp {
@@ -1561,4 +1559,20 @@ footer h4 a {
 	position: absolute;
     bottom: 0;
 	padding-bottom:50px;
+}
+
+.fullwidth {
+	width:100%;
+	padding-left:0;
+	padding-right:0;
+}
+
+.agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
+	margin-top:0;
+	/*
+	font-size:16px !important;		
+	padding: 10px 40px;
+	border: 2px solid #FFFFFF;
+	letter-spacing:3px;
+	*/
 }
