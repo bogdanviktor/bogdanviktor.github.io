@@ -8772,10 +8772,21 @@ form .input-error-2:focus {
   letter-spacing: 1px;
 }
 
+/* BV Works only in Safari and Chrome */
 .navbar-trans .navbar-logo {
-   content: url('../images/logo-w.png');
+   content: url('../images/logo-w.png'); 
 }
 
+/* BV Logo changing in FF */
+.navbar-trans .navbar-logo-ff {
+   background-image:url('../images/logo-w.png');
+   background-size:102%;
+}
+
+.navbar-logo-ff {
+   background-image:url('../images/logo_optimized.png');
+   background-size:102%;
+}
 .show-map, .show-info-link{
   font-size:14px !important;
 }
