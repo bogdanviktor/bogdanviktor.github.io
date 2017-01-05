@@ -1025,4 +1025,121 @@ function validateField ( field ) {
 
 	}
 
+	$('.register1, .register2').click(function() {
+		console.log('TESZT');
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      console.log(target);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      console.log(target);
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+  	});
+
+});
+
+
+
+
+
+/**
+ * Középre helyez egy képet, amit megadunk az addImg-el. 
+ *
+ * A használathoz, minden esetben a képet körülvelő elemet kell megadni. Ennek az elmenek a szélessége és hoszúsága lesz alapulvéve, és ebben középre lesz igatítva.
+ *
+ * 	// Az objektum, amit használni kell.
+ *  var t = new ImgToCenter();
+ *  //Hozzá adunk egy elemet.
+ *  t.addJqueryObject($('#imgBox'));
+ *  //Elindítjuk a process-t, hogy minden egyes elemet középre igazítsunk.
+ *  t.allWork();
+ *  //Ha ezt meghívjuk, bekapcsoljuk scrollozás figyelését.(még nem kikapcsolható siettem :)
+ *  t.resizeMonitioringOn();
+ * 
+ */
+var ImgToCenter = function() {
+    this.imgBoxes = [];
+
+    var self = this;
+    /**
+     * Hozzá adunk egy jquery, objektumot, amiben középre akatunk helyezni egy képet.
+     * @param Jquery Object Jquery A cél objektumunk
+     */
+    this.addJqueryObject = function(Jquery) {
+            self.imgBoxes.push(Jquery);
+        }
+        /**
+         * Hozzá adunk egy id-t, objektumot, amiben középre akatunk helyezni egy képet.
+         * @param string id Egy id, #-el kell hogy kezdődjön.
+         */
+    this.addId = function(id) {
+            self.addJqueryObject($(id));
+        }
+        /**
+         * Feldolgozzuk az összes meglévő adatot.
+         * 
+         * @return void
+         */
+    this.allWork = function() {
+        $.each(self.imgBoxes, function(index, val) {
+            self.worker(val);
+        });
+    }
+
+
+    /**
+     * Ez a függvény középre igazít egy képet.
+     * @param  Jquery Objectum Jquery Jquery objektum.
+     * @return void
+     */
+    this.worker = function(Jquery) {
+        var boxInnerWidth = Jquery.innerWidth();
+        var boxInnerHeight = Jquery.outerHeight();
+
+        var Img = Jquery.children('img');
+        var imgWidth = Img.width();
+        var imgHeight = Img.height();
+
+        //console.log(imgWidth);
+		console.log(boxInnerHeight);
+        
+        var left = (boxInnerWidth - imgWidth) / 2;
+        var top = ((boxInnerHeight - imgHeight) / 2 )-50;
+
+		var btnPosTop = (top + Img.outerHeight());
+		var btnPosLeft = (boxInnerWidth - $('.biggerbutton').innerWidth()) / 2;
+
+		$('.biggerbutton').css({ top: btnPosTop, left: btnPosLeft, position: "absolute"});
+
+        Img.css({ top: top, left: left, position: "absolute" });
+
+    }
+
+    /**
+     * Bekapcsoljuk, hogy az algoritums figyelje, átméretezük az oldalt.
+     * 
+     * @return void
+     */
+    this.resizeMonitioringOn = function() {
+        $(window).resize(function() {
+            self.allWork();
+        });
+    }
+};
+
+
+$(window).bind('load', function(){
+    // Az objektum, amit használni kell.
+    var t = new ImgToCenter();
+    //Hozzá adunk egy elemet.
+    t.addJqueryObject($('.hero-content'));
+    //Elindítjuk a process-t, hogy minden egyes elemet középre igazítsunk.
+    t.allWork();
+    //Ha ezt meghívjuk, bekapcsoljuk scrollozás figyelését.
+    t.resizeMonitioringOn();
 });
