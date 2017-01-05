@@ -200,20 +200,6 @@ img.biglogo {
   background: #659f1b;
 }
 
-.btn-yojee-bv {
-  background: #91BF37;
-  font-weight: lighter;
-  color: #fff;
-}
-
-.btn-yojee-bv:hover,
-.btn-yojee-bv:active,
-.btn-yojee-bv:focus {
-  background: #91BF37;
-  font-weight: lighter;
-  color: #fff;
-}
-
 /* anim layouts */
 #home_anim {
   position: absolute;
@@ -1370,4 +1356,25 @@ footer h4 a {
 }
 .coming-soon-btn {
   padding: 8px 0px;
+}
+
+
+/* BV 05/01/2017 */
+
+.margintop110 {
+	margin-top:110px;
+}
+
+.btn-yojee-bv {
+  background: #91BF37;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.btn-yojee-bv:hover,
+.btn-yojee-bv:active,
+.btn-yojee-bv:focus {
+  background: #91BF37;
+  font-weight: lighter;
+  color: #fff;
 }
