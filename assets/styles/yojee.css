@@ -1362,7 +1362,7 @@ footer h4 a {
 /* BV 05/01/2017 */
 
 .bvmargintop110 {
-	margin-top:110px;
+	margin-top:47px;
 }
 
 .btn-yojee-bv {
@@ -1378,3 +1378,21 @@ footer h4 a {
   font-weight: lighter;
   color: #fff;
 }
+
+.btn-white-outline-bv {
+  font-size: 0.9em !important;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  /* padding:15px; */
+  z-index: 500;
+  background: #91bf37 !important;
+  color: white  !important;
+  border-color: #91bf37;
+}
+.btn-white-outline-bv:hover,
+.btn-white-outline-bv:focus {
+  background: #91bf37 !important;
+  color: white  !important;
+  border-color: #91bf37;
+}
+
