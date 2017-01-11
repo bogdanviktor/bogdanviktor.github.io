@@ -237,13 +237,22 @@ img.biglogo-sg{
   left: 5vw;
   bottom: 4.5vw;
 }
-.cloud3 {
+.cloud3old {
   position: absolute;
   max-height: 50%;
   height: 20%;
   right: 38vw;
   bottom: 5vw;
 }
+
+.cloud3 {
+    position: absolute;
+    max-height: 100%;
+    height:100%;
+    right: 25vw; 
+    bottom: 1.5vw;
+}
+
 .cloud3-sg{
   position: absolute;
   max-height: 100%;
