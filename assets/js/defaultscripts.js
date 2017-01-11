@@ -23,7 +23,7 @@
 		});
 	};
 
-	function postNewsLetter2(f) {		
+	function postNewsLetter2(f) {
 		var post = {
 			"async": true,
 			"crossDomain": true,
@@ -101,7 +101,7 @@
 	});
 
     <!-- Google Analytics Tracking Code -->
-	
+
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
 		i[r] = i[r] || function() {

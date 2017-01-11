@@ -154,16 +154,8 @@
 .navbar-brand > img {
   height: 100%;
 }
-
-.agency2-hero.sg {
-    background: url(../images/backgrounds/home-sg.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-attachment: fixed;
-}
-
 .hero-content-wrapper .hero-content {
-  display: block !important;
+  /* display: block !important; */
   vertical-align: inherit !important;
   margin-top: 100px;
 }
@@ -173,21 +165,11 @@
   margin-top: auto !important;
 }
 img.biglogo {
-  width: 25vw;
-  min-width: 190px;
-  /*250px*/
-  height: initial;
-}
-
-
-img.biglogo-sg{
   width: 65vw;
   min-width: 320px;
   height: initial;
   margin-bottom: 0px;
   padding-top: 50px;
-  vertical-align: middle;
-
 }
 /* buttons  */
 .btn-white-outline {
@@ -206,6 +188,18 @@ img.biglogo-sg{
   color: white  !important;
   border-color: #91bf37;
 }
+.btn-yojee {
+  background: #71b220;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.btn-yojee:hover,
+.btn-yojee:active,
+.btn-yojee:focus {
+  background: #659f1b;
+}
+
 /* anim layouts */
 #home_anim {
   position: absolute;
@@ -214,21 +208,38 @@ img.biglogo-sg{
   width: 100%;
   bottom: 0;
   left: 0;
-  background: url(../images/backgrounds/home_anim_elements/bg.png);
+  /* the gradient back on hero
+	background: url(../images/backgrounds/home_anim_elements/bg.png); */
   background-size: contain;
   background-repeat: repeat-x;
 }
-
-#home_anim.sg{
- background: none;
-}
-
 .sun {
   position: absolute;
   max-height: 50%;
   height: 15%;
   right: 15vw;
   bottom: 13.5vw;
+}
+.sir-raffles {
+  position: absolute;
+  max-height: 58%;
+  height: 58%;
+  left: 38vw;
+  bottom: 1.5vw;
+}
+.merlion {
+  position: absolute;
+  max-height: 45%;
+  height: 45%;
+  right: 33vw;
+  bottom: 1.5vw;
+}
+.targonca {
+  position: absolute;
+  max-height: 15%;
+  height: 15%;
+  left: 17vw;
+  bottom: 1.5vw;
 }
 .cloud2 {
   position: absolute;
@@ -237,21 +248,20 @@ img.biglogo-sg{
   left: 5vw;
   bottom: 4.5vw;
 }
-.cloud3 {
+.cloud3old {
   position: absolute;
   max-height: 50%;
   height: 20%;
   right: 38vw;
   bottom: 5vw;
 }
-.cloud3-sg{
+.cloud3 {
   position: absolute;
   max-height: 100%;
   height: 100%;
   right: 25vw;
   bottom: 1.5vw;
 }
-
 .cloud4 {
   position: absolute;
   max-height: 50%;
@@ -259,8 +269,6 @@ img.biglogo-sg{
   right: 6vw;
   bottom: 5.5vw;
 }
-
-
 .mountains {
   position: absolute;
   max-height: 95%;
@@ -275,32 +283,16 @@ img.biglogo-sg{
 }
 .depo {
   position: absolute;
-  height: 28%;
+  height: 33%;
   left: 0;
   bottom: 1.5vw;
 }
-
-.sg .depo {
-    position: absolute;
-    height: 33%;
-    left: 0;
-    bottom: 1.5vw;
-}
-
 .city {
   position: absolute;
-  height: 90%;
+  height: 106%;
   right: 0;
   bottom: 1.5vw;
 }
-
-.sg .city {
-    position: absolute;
-    height: 106%;
-    right: 0;
-    bottom: 1.5vw;
-}
-
 .road {
   position: absolute;
   bottom: 0;
@@ -313,41 +305,16 @@ img.biglogo-sg{
 }
 .bigtruck {
   position: absolute;
-  height: 35%;
-  right: 40%;
-  bottom: 0.5vw;
-}
-
-.sg .bigtruck {
-  position: absolute;
   height: 30%;
   right: 40%;
   bottom: 0.5vw;
 }
-
 .bike {
   position: absolute;
   height: 32%;
   right: 55%;
   bottom: 0.1vw;
 }
-
-.sir-raffles {
-    position: absolute;
-    max-height: 58%;
-    height: 58%;
-    left: 38vw;
-    bottom: 1.5vw;
-}
-
-.merlion {
-    position: absolute;
-    max-height: 45%;
-    height: 45%;
-    right: 33vw;
-    bottom: 1.5vw;
-}
-
 /* clouds anim*/
 .clouds_container {
   width: 100%;
@@ -407,14 +374,16 @@ div.icon {
 .icon.sender {
   background-image: url(../images/icon_sender_n.png);
 }
-
-.icon.software {
-    background-image: url(../images/icon_software_n.png);
-}
-
 .icon.lastmile {
   background-image: url(../images/icon_lastmile_n.png);
 }
+.icon.software {
+  background-image: url(../images/icon_software_n.png);
+}
+.icon.courier {
+  background-image: url(../images/icon_courier_n.png);
+}
+
 .blog-post {
   background-color: white !important;
 }
@@ -444,7 +413,7 @@ div.icon {
   /* text-align: justify; */
   margin-top: 10px;
   line-height: 22px;
-  height: 132px;
+  min-height: 132px;
 }
 .jb-content .btn-outline {
   background: white;
@@ -465,6 +434,10 @@ div.icon {
 .blog-post:hover .software {
   background-image: url(../images/icon_software_s.png);
 }
+.blog-post:hover .courier {
+  background-image: url(../images/icon_courier_s.png);
+}
+
 .blog-post:hover .jb-content h2,
 .blog-post:hover .jb-content h4,
 .blog-post:hover .jb-content p {
@@ -577,12 +550,6 @@ section#contact {
   background: url(../images/video-overlay-bg.png);
   background-size: contain;
   background-repeat: repeat-x;
-}
-/* BV */
-#investors .sec-heading {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  padding-bottom: 0;
 }
 #traintrack {
   position: relative;
@@ -753,7 +720,12 @@ section#contact {
   margin: 15px;
 }
 .form-group {
+  /* was 
   margin-bottom: 25px;
+  */
+  /* BV 05/01/2017 */
+  margin-bottom: 10px; 
+  margin-top: 28px; 
 }
 .form-group label {
   display: block;
@@ -1091,7 +1063,7 @@ a.close-icon:focus {
 #blogeditform input,
 textarea {
   width: 700px;
-  /*margin-bottom: 30px;*/
+  margin-bottom: 30px;
 }
 #blogeditform .datefield {
   width: 150px;
@@ -1198,6 +1170,7 @@ textarea {
 }
 .bcmemberheight {
   min-height: 290px;
+  text-align: left;
 }
 footer h4 {
   font-size: 12px;
@@ -1224,9 +1197,27 @@ footer h4 a {
   padding: 5px;
   border: 1px solid black;
 }
-/*BV for investors */
+/* BV from here */
+#whyus h3 {
+  min-height: 45px;
+}
 .herobuttonmargin {
   margin-right: 20px;
+}
+#home h3 {
+  color: #ececec;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue";
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 10px;
+  margin-top: 0;
+  /*	font-size:45px;
+	letter-spacing:4px;
+	font-family: "Open Sans","Helvetica Neue" ;
+	font-weight:500; */
+}
+.register2 {
+  display: none ;
 }
 .videomobile {
   display: none ;
@@ -1237,28 +1228,31 @@ footer h4 a {
   padding-right: 15px;
 }
 .agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
-  margin-top: 0;
+  margin-top: 1%;
   /*
-	font-size:16px !important;
+	font-size:16px !important;		
 	padding: 10px 40px;
 	border: 2px solid #FFFFFF;
 	letter-spacing:3px;
 	*/
 }
-
-.storeimg {
-    margin: 0 25px;
-    margin-top: 40px;
-    height: 60px;
-}
-
-
 @media (max-width: 770px) {
+  #home h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 0;
+  }
   .herobuttons {
     width: 250px;
   }
   .btn-white-outline {
     font-size: 10px !important;
+  }
+  .register1 {
+    display: none ;
+  }
+  .register2 {
+    display: inline-block;
   }
   .videofull {
     display: none ;
@@ -1274,10 +1268,19 @@ footer h4 a {
     margin-right: 0px;
   }
   .agency2-hero .hero-content-wrapper .hero-content .biggerbutton {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 }
-
+@media (max-width: 350px) {
+  img.biglogo {
+    min-width: 250px;
+  }
+}
+.storeimg {
+  margin: 0 25px;
+  margin-top: 40px;
+  height: 60px;
+}
 #invheader {
   margin-bottom: 20px;
 }
@@ -1322,10 +1325,6 @@ footer h4 a {
   bottom: 0;
   padding-bottom: 50px;
 }
-.adr-group {
-  text-align: center !important;
-}
-
 .radio {
   display: inline-block;
   margin: 30px 40px;
@@ -1371,3 +1370,44 @@ footer h4 a {
 .coming-soon-btn {
   padding: 8px 0px;
 }
+
+
+/* BV 05/01/2017 */
+
+.bvmargintop110 {
+	margin-top:47px;
+}
+
+.btn-yojee-bv {
+  background: #91BF37;
+  font-weight: bold;
+  color: #fff;
+  border-color: #91bf37;
+}
+
+.btn-yojee-bv:hover,
+.btn-yojee-bv:active,
+.btn-yojee-bv:focus {
+  background: #91BF37;
+  font-weight: bold;
+  color: #fff;
+  border-color: #91bf37;
+}
+
+.btn-white-outline-bv {
+  font-size: 0.9em !important;
+  letter-spacing: 5px;
+  font-weight: bold;
+  /* padding:15px; */
+  z-index: 500;
+  background: #91bf37 !important;
+  color: white  !important;
+  border-color: #91bf37;
+}
+.btn-white-outline-bv:hover,
+.btn-white-outline-bv:focus {
+  background: #91bf37 !important;
+  color: white  !important;
+  border-color: #91bf37;
+}
+

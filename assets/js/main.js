@@ -7,9 +7,10 @@
 
     // Initialize all functions when the document is ready.
 	$(document).ready(function(){
-        initNavbar();
+		initNavbar();
 		initScroller();
-		//initCountCirc();	//not in use BV 12.10.2016
+		//init
+		// Circ();	//not in use BV 12.10.2016
 		//initCountCircMin(); //not in use BV 12.10.2016
 		initCountNbr();
 		initCountMin();
@@ -19,7 +20,7 @@
 		//initVideoBg();  //put after init BV 12.10.2016
 		//initKenburns(); //not in use BV 12.10.2016
 		//initCountdown(); //not in use BV 12.10.2016
-		
+
 		initScrollMagic();
 		// Parallax disabled for mobile screens
 		if ($(window).width() >= 1260) {
@@ -35,34 +36,34 @@
 
 	// Initialize functions after elements are loaded.
 	$(window).load(function() {
-				
-		$(".clickmark").click(function(){			
+
+		$(".clickmark").click(function(){
 			var hrefToGo=$(this).find("a").attr('href');
 			window.location.href=hrefToGo;
 		});
 
 		$("#popup-holder").click( function() {
-			window.location.href = 'index.html';	
+			window.location.href = 'index.html';
 		});
 
 		// Preloader
 		$('.preloader img').fadeOut(); // will first fade out the loading animation
-		$('.preloader').delay(350).fadeOut('slow', function(){ loadHangableStuff();});			
+		$('.preloader').delay(350).fadeOut('slow', function(){ loadHangableStuff();});
 
-		
+
 		initVideoBg(); //was in init but caused too slow page loading. now it seems to be faster (but not in real) BV 12.10.2016
 
-		
+
 		$("#demosubmit").click( function() {
 			window.scrollTo(0, 0);
 			$("#popup-holder").addClass('visible');
 		});
-		
+
 		initPortfolio();
 		initBlogMasonry();
 
 	});
-	
+
 	////BV 03.11.2016 it launches after fadeout done. Hopefully if one of these hangs on that doesn't hang the page load itself (the fader)
 	function loadHangableStuff() {
 		if ($('#bv-vidcontainer').hasClass('vidcontainer')) {
@@ -79,17 +80,17 @@
 
 		   // init controller
             var controller = new ScrollMagic.Controller();
-    
+
 	      // build tween
             var truckTween = TweenMax.to("#truck", 0.5, {left: "0"});
 			var bikeTween = TweenMax.to("#bike", 0.5, {right: "0"});
-			
-			
+
+
 			var cloud1Tween = TweenMax.to("#cloud1", 0.5, {left: "20%"});
 			var cloud2Tween = TweenMax.to("#cloud2", 0.5, {right: "0px"});
 		//	var cloud3Tween = TweenMax.to("#cloud3", 0.5, {left: +"300"});
-			
-  
+
+
             // build scene
             var truckScene = new ScrollMagic.Scene({triggerElement: "#trigger", offset:0, duration: 1000})
                             .setTween(truckTween)
@@ -102,8 +103,8 @@
 									$("#truck").removeClass('flipped');
 								}
 							});
-							
-							
+
+
 			 var bikeScene = new ScrollMagic.Scene({triggerElement: "#trigger", offset:0, duration: 1000})
                             .setTween(bikeTween)
                           //  .addIndicators() // add indicators (requires plugin)
@@ -115,56 +116,56 @@
 									$("#bike").removeClass('flipped');
 								}
 							});
-							
+
 			 var c1Scene = new ScrollMagic.Scene({triggerElement: "#trigger", offset:0, duration: 1000})
                             .setTween(cloud1Tween)
                             .addTo(controller);
-							
+
 			var c2Scene = new ScrollMagic.Scene({triggerElement: "#trigger", offset:0, duration: 1000})
                             .setTween(cloud2Tween)
                             .addTo(controller);
-		
-		
-		
-		
-		
-		/*					
+
+
+
+
+
+		/*
 			var c3Scene = new ScrollMagic.Scene({triggerElement: "#trigger", offset:500, duration: 800})
                             .setTween(cloud3Tween)
                             .addTo(controller);
-							
-		*/					
-							
-			
-							
-							
-								
-	
-		
+
+		*/
+
+
+
+
+
+
+
 			var planeTween = TweenMax.to("#plane", 0.5, {right: "-300px"});
             var planeScene = new ScrollMagic.Scene({triggerElement: "#trigger2", offset:-400, duration: 650})
                             .setTween(planeTween)
                        //     .addIndicators() // add indicators (requires plugin)
                             .addTo(controller)
 							.on("update", function (e) {
-								
+
 								if (e.target.controller().info("scrollDirection")=="REVERSE") {
                                    $("#plane").addClass('flipped');
                                 }else{
 									$("#plane").removeClass('flipped');
 								}
 							});
-							
-							
-							
+
+
+
 			var shipScene = new ScrollMagic.Scene({triggerElement: "#trigger3",offset:-30})
 					// trigger animation by adding a css class
 					.setClassToggle("#ship", "moving")
 					//.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
 					.addTo(controller);
-					
-					
-			/*		
+
+
+			/*
 			var trainTween = TweenMax.to("#train", 0.5, {left: "-600px"});
             var trainScene = new ScrollMagic.Scene({triggerElement: "#train_trigger", offset:-500, duration: 1100})
                             .setTween(trainTween)
@@ -177,13 +178,13 @@
 									$("#train").removeClass('flipped');
 								}
 							});
-							
+
 			*/
-			
-			
+
+
 			var b1 = TweenMax.to("#biker1", 0.5, {right: "0px"});
 			var b2 = TweenMax.to("#biker2", 0.5, {left: "0px"});
-			
+
 			var biker1Scene = new ScrollMagic.Scene({triggerElement: "#train_trigger", offset:-350, duration: 1100})
                             .setTween(b1)
                             .addTo(controller)
@@ -194,9 +195,9 @@
 									$("#biker1").removeClass('flipped');
 								}
 							});
-							
-							
-							
+
+
+
 			var biker2Scene = new ScrollMagic.Scene({triggerElement: "#train_trigger", offset:-350, duration: 1100})
                             .setTween(b2)
                             .addTo(controller)
@@ -206,26 +207,26 @@
                                 }else{
 									$("#biker2").removeClass('flipped');
 								}
-							});				
-			
-			
-			
+							});
+
+
+
 	}
-	
-	
-	
-	
+
+
+
+
 
 /* --------------------------------------------------
 	Navigation | Navbar
 -------------------------------------------------- */
-	
+
 	function initNavbar(){
 
 		// Sticky Nav & Transparent Background
 		$(window).scroll(function(){
 			if ($(window).scrollTop() > 20) {
-				
+
 				$('nav').removeClass('navbar-trans', 300);
 				$('nav').removeClass('navbar-trans-dark');
 //				$('nav').addClass('navbar-small', 300);
@@ -243,11 +244,11 @@
 
 		});
 
-		
+
 		// Nav on mobile screens
 		$(window).resize(function() {
 	        if ($(window).width() <= 1259) {
-				$('nav').addClass('mobile-nav');		        
+				$('nav').addClass('mobile-nav');
 		    } else {
 		    	$('nav').removeClass('mobile-nav');
 		    }
@@ -264,7 +265,7 @@
     		// Remove dropdown open on hover for small screens
     		if ($('nav').hasClass('mobile-nav')) {
 
-    			$('.dropdown-toggle').on('mouseover', function(e){    
+    			$('.dropdown-toggle').on('mouseover', function(e){
     			        e.preventDefault();
 
     			        $('.dropdown').removeClass('open');
@@ -278,7 +279,7 @@
 
     		if (!$('.nav a').hasClass('dropdown-toggle')) {
 
-    			$('.nav a').on('click', function(){ 
+    			$('.nav a').on('click', function(){
 			        if($('.navbar-toggle').css('display') !='none'){
 			            $(".navbar-toggle").trigger( "click" );
 			        }
@@ -301,16 +302,16 @@
 -------------------------------------------------- */
 
 	function initScroller () {
-		if (typeof $('#navbar') !== 'undefined' && $.isFunction($('#navbar').localScroll) ) { //BV 
+		if (typeof $('#navbar') !== 'undefined' && $.isFunction($('#navbar').localScroll) ) { //BV
 			$('#navbar').localScroll({
 				easing: 'easeInOutExpo'
 			});
 		}
 
-		if (typeof $('#page-top') !== 'undefined' && $.isFunction($('#page-top').localScroll) ) { //BV 
+		if (typeof $('#page-top') !== 'undefined' && $.isFunction($('#page-top').localScroll) ) { //BV
 			$('#page-top').localScroll({
 				easing: 'easeInOutExpo'
-			});	
+			});
 		}
 	} // initScroller
 
@@ -321,7 +322,7 @@
 	Parallax
 -------------------------------------------------- */
 
-	
+
 	function initParallax () {
 
 		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
@@ -335,7 +336,7 @@
 			if (typeof $('.testimonials-parallax') !== 'undefined' && $.isFunction($('.testimonials-parallax').parallax) ) { $(".testimonials-parallax").parallax("50%", 0.4); }
 			if (typeof $('.twitter-slider') !== 'undefined' && $.isFunction($('.twitter-slider').parallax) ) { $(".twitter-slider").parallax("50%", 0.4); }
 			if (typeof $('.login-2') !== 'undefined' && $.isFunction($('.login-2').parallax) ) { $(".login-2").parallax("50%", 0.2); }
-		}		
+		}
 	}
 
 
@@ -345,7 +346,7 @@
 -------------------------------------------------- */
 
 	function initCountCirc() {
-		
+
 		var hasCircles = $('#skillsCircles').hasClass('circles-counters');
 
 		if (hasCircles) {
@@ -358,7 +359,7 @@
 					  useEasing : true,
 					  separator : ''
 					};
-					
+
 					$('.chart').easyPieChart({
 						size: '150',
 						lineWidth: 2,
@@ -369,7 +370,7 @@
 					    easing: 'easeOutBack',
 					    animate: {
 					    	duration: 1600,
-					    	enabled: true 
+					    	enabled: true
 					    }
 					});
 					// init only once
@@ -385,7 +386,7 @@
 
 
 	function initCountCircMin() {
-		
+
 		var hasCircles = $('#skillsCirclesMin').hasClass('circles-counters-dark-bg');
 
 		if (hasCircles) {
@@ -398,7 +399,7 @@
 					  useEasing : true,
 					  separator : ''
 					};
-					
+
 					$('.chart').easyPieChart({
 						size: '150',
 						lineWidth: 2,
@@ -409,7 +410,7 @@
 					    easing: 'easeOutBack',
 					    animate: {
 					    	duration: 1600,
-					    	enabled: true 
+					    	enabled: true
 					    }
 					});
 					// init only once
@@ -441,7 +442,7 @@
 
 			    	var options = {
 						useEasing : true,
-						useGrouping : true, 
+						useGrouping : true,
 						separator : ','
 					};
 					// Counter 1
@@ -451,10 +452,10 @@
 					var counter2 = new CountUp('count-2', 0, 8, 0, 3, options);
 					counter2.start();
 					// Counter 3
-					var counter3 = new CountUp('count-3', 0, 591, 0, 3, options);
+					var counter3 = new CountUp('count-3', 0, 592, 0, 3, options);
 					counter3.start();
 					// Counter 4
-					var counter4 = new CountUp('count-4', 0, 32294, 0, 3, options);
+					var counter4 = new CountUp('count-4', 0, 33100, 0, 3, options);
 					counter4.start();
 					// init only once
 					this.destroy();
@@ -463,7 +464,7 @@
 			});
 
 		}
-		
+
 
 	} // initCountNbr
 
@@ -502,7 +503,7 @@
 			});
 
 		}
-		
+
 
 	} // initCountMin
 
@@ -511,7 +512,7 @@
 /* --------------------------------------------------
 	Sliders
 -------------------------------------------------- */
-	
+
 	function initSliders() {
 
 		//All typeof cons are by BV
@@ -670,7 +671,7 @@
 				autoplaySpeed: 4000,
 			});
 		}
-		
+
 		// Text Slider
 		if (typeof $('.text-slider') !== 'undefined' && $.isFunction($('.text-slider').slick) ) {
 			$('.text-slider').slick({
@@ -694,7 +695,7 @@
 /* --------------------------------------------------
 	Portfolio
 -------------------------------------------------- */
-	
+
 	function initPortfolio () {
 
 		// Filters
@@ -705,13 +706,13 @@
 			  $(this).parent().addClass('active');
 		});
 
-		
+
 		// Full Width Gallery (3 columns)
 		function pfolio3colFW () {
-		
+
 			var $container = $('#pfolio');
 			// init
-			if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV 
+			if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV
 				$container.isotope({
 					// options
 					itemSelector: '.portfolio-item',
@@ -721,7 +722,7 @@
 			// Filter items
 			$('#pfolio-filters').on( 'click', 'a', function() {
 				var filterValue = $(this).attr('data-filter');
-				if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV 
+				if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV
 					$container.isotope({ filter: filterValue });
 				}
 			});
@@ -730,10 +731,10 @@
 
 
 		function pfolioMasonry () {
-			
+
 			var $container = $('.pfolio-items');
 			// init
-			if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV 
+			if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV
 				$container.isotope({
 					// options
 					itemSelector: '.p-item',
@@ -741,14 +742,14 @@
 					layoutMode: 'packery',
 					masonry: {
 					  columnWidth: '.grid-sizer'
-					}				
+					}
 				});
 			}
 
 			// Filter items
 			$('#pfolio-filters').on( 'click', 'a', function() {
 				var filterValue = $(this).attr('data-filter');
-				if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV 
+				if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV
 					$container.isotope({ filter: filterValue });
 				}
 			});
@@ -780,7 +781,7 @@
 				    enabled: true
 				  }
 			});
-			
+
 		}
 
 		// Footer Gallery Lightbox
@@ -803,7 +804,7 @@
 		if (hasVideoPopup) {
 
 			$('.popup-video').magnificPopup({
-	          	disableOn: 700, 
+	          	disableOn: 700,
 	         	type: 'iframe',
 	          	mainClass: 'mfp-fade',
 	          	removalDelay: 160,
@@ -827,7 +828,7 @@
 
 		var $container = $('.blog-container');
 			// init
-		if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV 
+		if (typeof $container !== 'undefined' && $.isFunction($container.isotope) ) { //BV
 			$container.isotope({
 				// options
 				itemSelector: '.blog-selector',
@@ -835,7 +836,7 @@
 			});
 		}
 	}
-	
+
 
 
 
@@ -882,9 +883,9 @@
 
 		if (hasBgVideo || hasFwBgVideo || hasSecBgVideo) {
 			$('.player').YTPlayer();
-			
+
 		}
-		
+
 
 	}
 
@@ -894,7 +895,7 @@
 	Ken Burns Slider
 -------------------------------------------------- */
 	function initKenburns () {
-		
+
 		var hasKenburns = $('.kenburn-hero')[0];
 
 		if (hasKenburns) {
@@ -945,7 +946,7 @@
 
 
 /* --------------------------------------------------
-	Contact Form JS Validation & AJAX call 
+	Contact Form JS Validation & AJAX call
 -------------------------------------------------- */
 $(function() {
 //	Regular Expressions
@@ -967,11 +968,11 @@ $( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
 /*
 $( '.form-ajax' ).submit(function(e) {
 	e.preventDefault();
-	
+
 	var $this = $( this ),
 			action = $this.attr( 'action' );
-	
-	alert(action);		
+
+	alert(action);
 	// The AJAX requrest
 	$.post(
 			action,
@@ -1048,7 +1049,7 @@ function validateField ( field ) {
 
 
 /**
- * Középre helyez egy képet, amit megadunk az addImg-el. 
+ * Középre helyez egy képet, amit megadunk az addImg-el.
  *
  * A használathoz, minden esetben a képet körülvelő elemet kell megadni. Ennek az elmenek a szélessége és hoszúsága lesz alapulvéve, és ebben középre lesz igatítva.
  *
@@ -1060,7 +1061,7 @@ function validateField ( field ) {
  *  t.allWork();
  *  //Ha ezt meghívjuk, bekapcsoljuk scrollozás figyelését.(még nem kikapcsolható siettem :)
  *  t.resizeMonitioringOn();
- * 
+ *
  */
 var ImgToCenter = function() {
     this.imgBoxes = [];
@@ -1082,7 +1083,7 @@ var ImgToCenter = function() {
         }
         /**
          * Feldolgozzuk az összes meglévő adatot.
-         * 
+         *
          * @return void
          */
     this.allWork = function() {
@@ -1107,7 +1108,7 @@ var ImgToCenter = function() {
 
         //console.log(imgWidth);
 		console.log(boxInnerHeight);
-        
+
         var left = (boxInnerWidth - imgWidth) / 2;
         var top = ((boxInnerHeight - imgHeight) / 2 )-50;
 
@@ -1122,7 +1123,7 @@ var ImgToCenter = function() {
 
     /**
      * Bekapcsoljuk, hogy az algoritums figyelje, átméretezük az oldalt.
-     * 
+     *
      * @return void
      */
     this.resizeMonitioringOn = function() {
@@ -1137,7 +1138,7 @@ $(window).bind('load', function(){
     // Az objektum, amit használni kell.
     var t = new ImgToCenter();
     //Hozzá adunk egy elemet.
-    t.addJqueryObject($('.hero-content'));
+    t.addJqueryObject($('#hero-sg'));
     //Elindítjuk a process-t, hogy minden egyes elemet középre igazítsunk.
     t.allWork();
     //Ha ezt meghívjuk, bekapcsoljuk scrollozás figyelését.

@@ -7722,11 +7722,9 @@ form .input-error-2:focus {
 .agency2-hero {
   background: url(../images/backgrounds/home.jpg);
   background-size: cover;
-  /*  background-position: 50%; REPLACED BY BV */
-  background-position:center bottom ;
+  background-position: 50%;
   background-attachment: fixed;
 }
-
 
 .investors-hero {
   background: url(../images/backgrounds/investors_bg.jpg);
@@ -7734,7 +7732,6 @@ form .input-error-2:focus {
   background-position:center bottom ;
   background-attachment: fixed;
 }
-
 
 .services-hero{
   background-image: url(../images/backgrounds/services.jpg);
@@ -7807,12 +7804,8 @@ form .input-error-2:focus {
   margin-top: 50px;
 }
 
-.agency2-hero .hero-content-wrapper {
+.agency2-hero .hero-content-wrapper .hero-content img {
   margin-bottom: 50px;
-}
-
-.hero-content img {
-  margin-bottom: 0px;
 }
 
 /* ---- 20.9 Animated Heading ---- */
@@ -8787,9 +8780,11 @@ form .input-error-2:focus {
    background-image:url('../images/logo_optimized.png');
    background-size:102%;
 }
+
 .show-map, .show-info-link{
   font-size:14px !important;
 }
+
 
 /*# sourceMappingURL=main.css.map */
 
