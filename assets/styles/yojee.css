@@ -421,6 +421,10 @@ div.icon {
     background-image: url(../images/icon_software_n.png);
 }
 
+.icon.courier {
+  background-image: url(../images/icon_courier_n.png);
+}
+
 .icon.lastmile {
   background-image: url(../images/icon_lastmile_n.png);
 }
@@ -474,6 +478,10 @@ div.icon {
 .blog-post:hover .software {
   background-image: url(../images/icon_software_s.png);
 }
+.blog-post:hover .courier {
+  background-image: url(../images/icon_courier_s.png);
+}
+
 .blog-post:hover .jb-content h2,
 .blog-post:hover .jb-content h4,
 .blog-post:hover .jb-content p {
