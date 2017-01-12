@@ -1388,3 +1388,8 @@ footer h4 a {
 .coming-soon-btn {
   padding: 8px 0px;
 }
+
+.no-sidepadding {
+	padding-left:0;
+	padding-right:0 ;
+}
