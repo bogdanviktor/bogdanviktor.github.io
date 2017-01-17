@@ -3509,34 +3509,24 @@ fieldset[disabled] .form-control:hover {
 /* BV for Singapore home ---- 9.12 Video Background ---- */
 .bv-play-btn {
   display: inline-block;
-  padding-top: 50px;
+  padding-top: 70px;
 }
-/*
-.bv-play-btn .bv-play-icon {
-  display: inline-block;
-  font-size: 64px;
-  vertical-align: middle;
-  -webkit-transform: translateX(65px);
-      -ms-transform: translateX(65px);
-          transform: translateX(65px);
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
-}
-*/
+
 .bv-play-btn h5, .bv-play-btn .ft-boxed-hover ul li .hover-content .ft-heading, .ft-boxed-hover ul li .hover-content .bv-play-btn .ft-heading, .bv-play-btn .ft-tabs .tabs-list li a .tab-group .tab-info, .ft-tabs .tabs-list li a .tab-group .bv-play-btn .tab-info, .bv-play-btn .sidebar .comments-widget .widget-item span .widget-comm-title, .sidebar .comments-widget .widget-item span .bv-play-btn .widget-comm-title, .bv-play-btn .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .comingsoon .content-wrapper .content-inner .cs-timer .item .bv-play-btn .title-timer {
   display: inline-block;
   padding-left: 20px;
   vertical-align: middle;
-/*  opacity: 0.5;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-		  */
 }
 
 .bv-play-btn .bv-play-icon {
   display: inline-block;
   vertical-align: middle;
-  font-size: 40px;
+  font-size: 44px;
+}
+
+.bv-play-text {
+  font-size: 23px;
+  font-family: "nunito-bold" !important;
 }
 
 /*
