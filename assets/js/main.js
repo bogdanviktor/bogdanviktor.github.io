@@ -15,7 +15,8 @@
 		initCountNbr();
 		initCountMin();
 		initSliders();
-		//initGallery(); //not in use BV 12.10.2016
+
+		initGallery(); 
 		initAnimation();  //not sure BV 12.10.2016
 		//initVideoBg();  //put after init BV 12.10.2016
 		//initKenburns(); //not in use BV 12.10.2016
