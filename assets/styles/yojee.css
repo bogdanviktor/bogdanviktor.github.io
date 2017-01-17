@@ -19,6 +19,10 @@ div.section.why2{
   background-attachment: inherit;
 }
 
+.video-bg-singapore {
+  background: url(../images/backgrounds/video-image-darker.jpg);
+}
+
 .video-bg-section .video-sec-content {
   padding-top: 72px;
 }
