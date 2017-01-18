@@ -53,8 +53,15 @@
     <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home<span class="sr-only"></span></a></li>
-        <li><a href="/investors.html">investors<span class="sr-only"></span></a></li>
-        <li><a href="/blog/">blog<span class="sr-only"></span></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pricing<span class="sr-only"></span></a>
+          <ul class="dropdown-menu" style="opacity:1">
+            <li><a href="https://s3-ap-southeast-1.amazonaws.com/yojee-public/Yojee_3+Hour+Express+Pricing.pdf" style="color:black" target="_blank">3-Hour Express Delivery</a></li>
+            <li><a href="https://s3-ap-southeast-1.amazonaws.com/yojee-public/Yojee_Same+Day+Pricing.pdf" style="color:black" target="_blank">Same Day Delivery</a></li>
+            <li><a href="https://s3-ap-southeast-1.amazonaws.com/yojee-public/Yojee_Next+Day+Pricing.pdf" style="color:black" target="_blank">Next Day Delivery</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog<span class="sr-only"></span></a></li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">FAQ<span class="sr-only"></span></a>
         <ul class="dropdown-menu" style="opacity:1">
@@ -62,7 +69,8 @@
           <li><a href="/faq" style="color:black">Delivery Partner FAQ</a></li>
         </ul>
         </li>
-        <li><a href="/contact.html">contact us<span class="sr-only"></span></a></li>
+        <li><a href="/contact.html">Contact Us<span class="sr-only"></span></a></li>
+        <li><a href="/investors.html">Investors<span class="sr-only"></span></a></li>
         <li>
           <form action="https://yojee-webforms.herokuapp.com/api/newsletter" method="post" id="newsletter_form">
             <div class="form-group">
@@ -295,7 +303,7 @@
 
             <div class="jb-content" style="height:431px">
               <h4>The</h4>
-              <h2>Software</h2> 
+              <h2>Software</h2>
 
               <!-- Blurb -->
               <p class="text-center">Yojee's software is changing the industry. Subscription based artificial intelligence software that optimises and scales like never before.</p>
