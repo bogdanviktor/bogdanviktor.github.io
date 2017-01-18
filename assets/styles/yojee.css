@@ -1442,3 +1442,11 @@ footer h4 a {
 .blackh2 h2 {
 	color : #000000 ;
 }
+
+.small-top-padding {
+	padding-top:50px;
+}
+
+.small-bottom-margin {
+	margin-bottom:50px;	
+}
