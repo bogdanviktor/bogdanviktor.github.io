@@ -1,2 +1,5 @@
 .idea/
 yojeeweb.iml
+_site/
+.DS_Store
+assets/images/.DS_Store
