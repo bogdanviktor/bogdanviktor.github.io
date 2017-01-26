@@ -7757,13 +7757,6 @@ form .input-error-2:focus {
   color: #999;
 }
 
-.agency2-hero {
-  background: url(../images/newcarousel/home.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  background-attachment: fixed;
-}
-
 .investors-hero {
   background: url(../images/backgrounds/investors_bg.jpg);
   background-size: cover;
