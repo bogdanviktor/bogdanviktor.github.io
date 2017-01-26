@@ -197,11 +197,10 @@ div.section.why2{
 
 .sgback {
     background: url(../images/backgrounds/homesg.jpg);
-    /*background-size: cover;
-	 background-position: center bottom; */
+    background-size: cover;
+	/* background-position: center bottom; */
     background-position: 50%; 
     background-attachment: fixed;
-	*/
 }
 
 .hero-content-wrapper .hero-content {
