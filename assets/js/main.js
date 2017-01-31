@@ -68,7 +68,7 @@
 	////BV 03.11.2016 it launches after fadeout done. Hopefully if one of these hangs on that doesn't hang the page load itself (the fader)
 	function loadHangableStuff() {
 		if ($('#bv-vidcontainer3').hasClass('vidcontainer3')  ) {
-				$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
+			  //$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
 				$('.vidcontainer3').fitVids();
 				$('.vidcontainer4').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
 				$('.vidcontainer4').fitVids();
