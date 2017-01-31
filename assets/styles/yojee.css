@@ -1089,16 +1089,32 @@ a.close-icon:focus {
 .blog-post-bv {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
-.blog-post-bv H3 {
+
+.blog-post-bv-white {
+  background: #ffffff none repeat scroll 0 0 !important;
+}
+
+.blog-post-bv H3,
+.blog-post-bv-white H3 {
   font-size: 15px;
   letter-spacing: 0.3px;
   line-height: 1.5;
   margin-bottom: 5px;
   width: 80%;
 }
+
+.whitebg {
+	background-color:#FFFFFF ;
+}
+
 .blog-post-bv:hover {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
+
+.blog-post-bv-white:hover {
+  background: #ffffff none repeat scroll 0 0 !important;
+}
+
 #blog .blog-post {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
