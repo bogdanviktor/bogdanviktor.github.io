@@ -76,19 +76,9 @@
 				$('.vidcontainer2').fitVids();
 		}
 		if ($('#bv-vidcontainer3').hasClass('vidcontainer3')  ) {
-				var autoplay="";
-				if ($('.videofull').css('display')!='none') {
-					//autoplay="?autoplay=1" ;
-				}
-				$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o'+autoplay+'" frameborder="0" allowfullscreen></iframe>') ;
+				$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
 				$('.vidcontainer3').fitVids();
-				
-				if ($('.videomobile').css('display')!='none') {
-					//autoplay="?autoplay=1" ;
-				} else {
-					autoplay="" ;
-				}
-				$('.vidcontainer4').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o'+autoplay+'" frameborder="0" allowfullscreen></iframe>') ;
+				$('.vidcontainer4').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
 				$('.vidcontainer4').fitVids();
 		}
 	}
