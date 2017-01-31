@@ -1089,7 +1089,6 @@ a.close-icon:focus {
 .blog-post-bv {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
-
 .blog-post-bv H3 {
   font-size: 15px;
   letter-spacing: 0.3px;
@@ -1097,15 +1096,9 @@ a.close-icon:focus {
   margin-bottom: 5px;
   width: 80%;
 }
-
-.whitebg {
-	background-color:#FFFFFF ;
-}
-
 .blog-post-bv:hover {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
-
 #blog .blog-post {
   background: #f8f8f8 none repeat scroll 0 0 !important;
 }
