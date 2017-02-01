@@ -77,9 +77,9 @@
 		}
 		if ($('#bv-vidcontainer3').hasClass('vidcontainer3')  ) {
 				$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
-				$('.vidcontainer3').fitVids();
+				$('.vidcontainer3').fitVids({forceAspectRatio:0.562});
 				$('.vidcontainer4').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
-				$('.vidcontainer4').fitVids();
+				$('.vidcontainer4').fitVids({forceAspectRatio:0.562});
 		}
 	}
 
