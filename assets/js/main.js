@@ -69,17 +69,15 @@
 	function loadHangableStuff() {
 		if ($('#bv-vidcontainer').hasClass('vidcontainer') ) {
 				$('.vidcontainer').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/ffHr-PLjlqk" frameborder="0" allowfullscreen></iframe>') ;
-				$('.vidcontainer').fitVids();
+				$('.vidcontainer').fitVids({forceAspectRatio:0.562});
 		}
 		if ($('#bv-vidcontainer2').hasClass('vidcontainer2')  ) {
 				$('.vidcontainer2').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
-				$('.vidcontainer2').fitVids();
+				$('.vidcontainer2').fitVids({forceAspectRatio:0.562});
 		}
 		if ($('#bv-vidcontainer3').hasClass('vidcontainer3')  ) {
 				$('.vidcontainer3').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
 				$('.vidcontainer3').fitVids({forceAspectRatio:0.562});
-				//$('.vidcontainer4').html('<iframe style="max-width: 100%;" src="https://www.youtube.com/embed/E3J4Ox1sZ8o" frameborder="0" allowfullscreen></iframe>') ;
-				//$('.vidcontainer4').fitVids({forceAspectRatio:0.562});
 		}
 	}
 
