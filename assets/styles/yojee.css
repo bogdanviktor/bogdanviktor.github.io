@@ -851,6 +851,13 @@ section#contact {
 .form-group .c_checkbox:checked + label span {
   background-position: 0 -30px;
 }
+/* custom file uploader */
+.form-group input[type="file"]{
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
+}
+
 /* form thank you popup */
 .visible {
   display: block !important;
