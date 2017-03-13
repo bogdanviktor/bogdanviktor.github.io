@@ -44,7 +44,7 @@
 
 .form_box {
     width: 440px;
-    height: 81%;
+    height: 75%;
     float: right;
     top: 15%;
     right: 4%;
@@ -60,7 +60,6 @@
 	height:100%;
 	padding: 0px 11% 0px 10%;
     overflow-y: scroll;
-
 }
 
 .form-wrapper {overflow: hidden;}
@@ -78,7 +77,7 @@
 
 .from-header h2 {
     font-family: nunito-regular;
-    font-size: 27px;
+    font-size: 32px;
     line-height: 45px;
     vertical-align: top;
     margin-bottom: 22px !important;
@@ -90,11 +89,11 @@
 
 .from-header h2 img {
     display: inline-block;
-    height: 37px;
+    height: 49px;
     position: relative;
-    margin-left: 8px;
-    margin-right: 7px;
-    top: -7px;
+    margin-left: 11px;
+    margin-right: 10px;
+    top: -10px;
 }
 
 .form-group {
@@ -225,9 +224,9 @@ h3, .page-title .subheading {font-size: 30px;}
 
 .grleftside {
   position: absolute;
-  height: 130%;
+  height: 140%;
   left: 0;
-  bottom:0 ;
+  bottom:5vh ;
 }
 
 .h1line {
@@ -268,11 +267,31 @@ h3, .page-title .subheading {font-size: 30px;}
 	
 	.grleftside {
 		position: absolute;
-		height: 110%;
+		height: 135%;
 		left: 0;
-		bottom:0 ;
+		bottom:5vh ;
 	}
 	
+	.from-header h2 {
+		font-family: nunito-regular;
+		font-size: 28px;
+		line-height: 45px;
+		vertical-align: top;
+		margin-bottom: 22px !important;
+		color: #fff;
+		text-transform: none;
+		letter-spacing: 1px;
+		margin-top: 45px !important;
+	}
+
+	.from-header h2 img {
+		display: inline-block;
+		height: 45px;
+		position: relative;
+		margin-left: 12px;
+		margin-right: 11px;
+		top: -10px;
+	}
 	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
 
 	}
@@ -298,6 +317,26 @@ h3, .page-title .subheading {font-size: 30px;}
 	.from-header h2 {
 		font-size: 30px;
 	}
+	.from-header h2 {
+		font-family: nunito-regular;
+		font-size: 24px;
+		line-height: 45px;
+		vertical-align: top;
+		margin-bottom: 22px !important;
+		color: #fff;
+		text-transform: none;
+		letter-spacing: 1px;
+		margin-top: 45px !important;
+	}
+
+	.from-header h2 img {
+		display: inline-block;
+		height: 40px;
+		position: relative;
+		margin-left: 12px;
+		margin-right: 11px;
+		top: -9px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -316,7 +355,8 @@ h3, .page-title .subheading {font-size: 30px;}
 		position: absolute;
 		height: 90%;
 		left: 0;
-		bottom:0 ;
+		bottom:8vh ;
 	}
 
 }
+
