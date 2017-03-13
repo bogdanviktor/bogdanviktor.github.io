@@ -43,11 +43,8 @@
 }
 
 .form_box {
-    width: 470px;
-    /* top: 190px;
-     height: 630px;
-	*/
-    height: 75%;
+    width: 440px;
+    height: 81%;
     float: right;
     top: 15%;
     right: 4%;
@@ -61,7 +58,7 @@
 .form_container {
 	width:104% ;
 	height:100%;
-	padding: 15px 8% 0px 7%;
+	padding: 0px 11% 0px 10%;
     overflow-y: scroll;
 
 }
@@ -78,9 +75,10 @@
     letter-spacing: 1px;
     margin-top: 45px !important;
 }
+
 .from-header h2 {
     font-family: nunito-regular;
-    font-size: 38px;
+    font-size: 27px;
     line-height: 45px;
     vertical-align: top;
     margin-bottom: 22px !important;
@@ -89,13 +87,30 @@
     letter-spacing: 1px;
     margin-top: 45px !important;
 }
+
+.from-header h2 img {
+    display: inline-block;
+    height: 37px;
+    position: relative;
+    margin-left: 8px;
+    margin-right: 7px;
+    top: -7px;
+}
+
+.form-group {
+    font-size: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-weight: 100;
+	color: #555;
+}
+
 .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"], .form-group textarea {
     border: solid 1px #ccc !important;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    font-size: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     line-height: 16px;
-    height: 55px;
+    height: 45px;
 }
 
 .form-group .c_checkbox1 {
@@ -104,34 +119,38 @@
 
 .form-group label.file-upload {
     border: solid 1px #ccc !important;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: none;
-    color: #555;
-    font-weight: 100;
-    padding: 0 17px;
-    font-size: 21px;
-    line-height: 45px;
-    height: 55px;
+    padding: 0px;
+	padding-left:24px ;
+    line-height: 40px;
+    height: 45px;
     cursor: pointer;
     background: #fff;
+	color: #555;    
 }
 .form-group-select div {
     display: inline-block;
-    xpadding: 15px 15px;
-	text-align: center;
-	width:24%;
+    text-align: center;
+	width:23%;
 }
 
 .form-group label {
-    display: block;
-    font-size: 22px;
-    color: #fff;
-    text-transform: none;
-    font-family: "Open sans";
-    font-weight: 100;
-    text-align: left;
-    letter-spacing: 1px;
+	display: block;
+	font-family: nunito-regular;
+	font-size: 16px;
+	font-weight:lighter ;
+	color: #fff;
+	text-transform: none ;
+	letter-spacing:1px;
 }
+
+.form-group .transport-alt {
+	color: #fff;
+	font-family: nunito-regular;
+	font-size: 14px;
+	font-weight:lighter ;
+	letter-spacing:1px;
+}
+
 .form-wrapper .from-header h2 img {
     display: inline-block;
     height: 63px;
@@ -139,13 +158,7 @@
     margin-left: 5px;
     top: -16px;
 }
-.from-header h2 img {
-    display: inline-block;
-    height: 63px;
-    position: relative;
-    margin-left: 5px;
-    top: -16px;
-}
+
 .btn-text, .btn-text-light {
     background: none;
     border: 1px solid #fff;
@@ -281,6 +294,9 @@ h3, .page-title .subheading {font-size: 30px;}
 	
 	.hero-secondary {
 		display:none ;	
+	}
+	.from-header h2 {
+		font-size: 30px;
 	}
 }
 

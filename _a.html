@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yojee - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="max-age=1209600">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png"  href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css"> <!-- BV was main.css -->
+    <link rel="stylesheet" href="assets/styles/workwus.css"> <!-- BV different for global and sg -->
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.min.css">
+      <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/styles/vendor/slick.min.css">
+      <link rel="stylesheet" href="assets/styles/vendor/magnific-popup.min.css">
+      <link rel="stylesheet" href="assets/styles/vendor/animate.min.css">
+    </noscript>
+    <link rel="stylesheet" href="assets/styles/yojee.css">
+  </head>
+  <body id="page-top" data-spy="scroll" >
+
+		<div class="form_box">
+			<div class="from-header">
+				<h2>Be a<img src="assets/images/yojee_logo_optimized.png"/>Courier</h2>
+			</div>
+			<div class="form-wrapper">
+				
+				
+				<form id="data-form" action="driver_form" method="POST"
+					  class="form-minimal form-ajax" enctype="multipart/form-data">
+
+					
+					<div class="form-group">
+						<label for="name-contact-3"></label>
+						<input type="text" name="name" id="name-contact-3"
+							   class="form-control validate-locally" placeholder="Enter your name" required>
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					
+					<div class="form-group">
+
+						<label></label>
+
+
+						<input type="file" name="profilepic" id="profilepic-contact-3"
+							   class="form-control validate-locally fileinput" placeholder="Upload profile picture"  required>
+						<label for="profilepic-contact-3" class="file-upload" id="profil-upload"><i class="fa fa-upload"></i> Upload profile picture</label>
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					
+					<div class="form-group">
+						<label for="birth-contact-3"></label>
+						<input type="text" name="birth" id="birth-contact-3"
+							   class="datepicker form-control validate-locally" placeholder="Enter your birthday"
+								required>
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					
+					<div class="form-group">
+						<label></label>
+
+
+						<input type="file" name="icpic1" id="icpic1-contact-3"
+							   class="form-control validate-locally fileinput" placeholder="Upload IC front picture"  required>
+						<label for="icpic1-contact-3" class="file-upload" id="ic-front-upload"><i class="fa fa-upload"></i> Upload IC front picture</label>
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					<div class="form-group">
+						<label></label>
+
+						<input type="file" name="icpic2" id="icpic2-contact-3"
+							   class="form-control validate-locally fileinput" placeholder="Upload IC back picture"  required>
+						<label for="icpic2-contact-3" class="file-upload" id="ic-back-upload"><i class="fa fa-upload"></i> Upload IC back picture</label>
+
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					
+					<!--<div class="form-group">
+						<label for="phone-contact-3"></label>
+						<input type="tel" name="phone" id="phone-contact-3" class="form-control validate-locally"
+							   placeholder="Enter your phone number" required>
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					
+					<div class="form-group">
+						<label for="email-contact-3"></label>
+						<input type="email" name="email" id="email-contact-3"
+							   class="form-control validate-locally" placeholder="Enter your email" required>
+						<span class="pull-right alert-error"></span>
+					</div>-->
+
+					
+					<div class="form-group">
+						<label>Select your type of transport: <br><span class="transport-alt"><i>( Multiply selection avible )</i></span></label>
+
+						<div class="form-group-select">
+						<div>
+						<img src="assets/images/workwithus/icon_pedestrian.png" style="width:60px;"><br>
+						<input type="checkbox" id="c1" name="transport" value="walk"
+							   class="c_checkbox1">
+						<label for="c1"><span></span></label>
+						</div>
+
+						<div>
+						<img src="assets/images/workwithus/icon_moto.png" style="width:60px;"><br>
+						<input type="checkbox" id="c2" name="transport" value="motorcycle"
+							   class="c_checkbox1">
+						<label for="c2"><span></span></label>
+						</div>
+
+						<div>
+						<img src="assets/images/workwithus/icon_car.png" style="width:60px;"><br>
+						<input type="checkbox" id="c3" name="transport" value="car"
+							   class="c_checkbox1">
+						<label for="c3"><span></span></label>
+						</div>
+
+						<div>
+						<img src="assets/images/workwithus/icon_van.png" style="width:60px;"><br>
+						<input type="checkbox" id="c4" name="transport" value="van"
+							   class="c_checkbox1">
+						<label for="c4"><span></span></label>
+						</div>
+						</div>
+					</div>
+
+					
+					<div class="form-group">
+						<label for="preffered-area"></label>
+						<input type="text" name="name" id="preffered-area"
+							   class="form-control validate-locally" placeholder="Preferred Delivery Areas" >
+						<span class="pull-right alert-error"></span>
+					</div>
+		  
+					<div class="form-group">
+						<label for="preffered-workday"></label>
+						<input type="text" name="name" id="preffered-workday"
+							   class="form-control validate-locally" placeholder="Preferred Work Days" >
+						<span class="pull-right alert-error"></span>
+					</div>
+					
+					
+					<div class="form-group">
+						<label for="preffered-hours"></label>
+						<input type="text" name="name" id="preffered-hours"
+							   class="form-control validate-locally" placeholder="Preferred Work Hours" >
+						<span class="pull-right alert-error"></span>
+					</div>
+
+					<div class="form-group">
+						<label></label>
+
+						<div class="agree">
+						<input type="checkbox" id="c21" name="agree" value="agreed"
+							   class="c_checkbox1">
+						<label for="c21" style="float:left;"><span></span>Agree to the <a target="_blank" href="/terms">T&C</a> *</label>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<input id="button-submit" type="submit" class="btn-text btn-disabled" value="SUBMIT" disabled>
+					</div>
+					
+					<div class="ajax-message"></div>
+
+				</form>
+			</div>
+		</div>

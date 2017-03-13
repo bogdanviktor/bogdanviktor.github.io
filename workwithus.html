@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/styles/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/et-lineicons/css/style.min.css">
     <link rel="stylesheet" href="assets/styles/main.css"> <!-- BV was main.css -->
-    <link rel="stylesheet" href="assets/styles/workwus.css"> <!-- BV different for global and sg -->
     <link rel="stylesheet" href="assets/styles/responsive.css">
     <noscript id="deferred-styles">
       <link rel="stylesheet" href="assets/fonts/linea-font/css/linea-font.min.css">
@@ -22,6 +21,7 @@
       <link rel="stylesheet" href="assets/styles/vendor/animate.min.css">
     </noscript>
     <link rel="stylesheet" href="assets/styles/yojee.css">
+    <link rel="stylesheet" href="assets/styles/workwus.css"> <!-- BV let it be the last -->
   </head>
   <body id="page-top" data-spy="scroll" >
 
@@ -216,17 +216,17 @@
 							function ClickCB (id) {
 								if (document.getElementById("cb"+id).checked==true) {
 									document.getElementById("cb"+id).checked=false ;
-									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_off.jpg" ;									
+									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_off.png" ;									
 								} else {
 									document.getElementById("cb"+id).checked=true ;
-									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_on.jpg" ;									
+									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_on.png" ;									
 								}
 							}
 							function SetCB (id) {
 								if (document.getElementById("cb"+id).checked==true) {
-									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_on.jpg" ;									
+									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_on.png" ;									
 								} else {
-									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_off.jpg" ;									
+									document.getElementById("img"+id).src="assets/images/workwus/"+id+"_off.png" ;									
 								}
 							}
 						</script>
