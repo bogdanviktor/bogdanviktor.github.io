@@ -150,7 +150,7 @@
 						<div class="form-group">
 							<label for="name-contact-3"></label>
 							<input type="text" name="name" id="name-contact-3"
-								   class="form-control validate-locally" placeholder="Enter your name" required>
+								   class="form-control xvalidate-locally" placeholder="Enter your name" required>
 							<span class="pull-right alert-error"></span>
 						</div>
 
@@ -161,7 +161,7 @@
 
 
 							<input type="file" name="profilepic" id="profilepic-contact-3"
-								   class="form-control validate-locally fileinput" placeholder="Upload profile picture"  required>
+								   class="form-control xvalidate-locally fileinput" placeholder="Upload profile picture"  required>
 							<label for="profilepic-contact-3" class="file-upload" id="profil-upload"><i class="fa fa-upload"></i> Upload profile picture</label>
 							<span class="pull-right alert-error"></span>
 						</div>
@@ -170,7 +170,7 @@
 						<div class="form-group">
 							<label for="birth-contact-3"></label>
 							<input type="text" name="birth" id="birth-contact-3"
-								   class="datepicker form-control validate-locally" placeholder="Enter your birthday"
+								   class="datepicker form-control xvalidate-locally" placeholder="Enter your birthday"
 									required>
 							<span class="pull-right alert-error"></span>
 						</div>
@@ -181,7 +181,7 @@
 
 
 							<input type="file" name="icpic1" id="icpic1-contact-3"
-								   class="form-control validate-locally fileinput" placeholder="Upload IC front picture"  required>
+								   class="form-control xvalidate-locally fileinput" placeholder="Upload IC front picture"  required>
 							<label for="icpic1-contact-3" class="file-upload" id="ic-front-upload"><i class="fa fa-upload"></i> Upload IC front picture</label>
 							<span class="pull-right alert-error"></span>
 						</div>
@@ -190,7 +190,7 @@
 							<label></label>
 
 							<input type="file" name="icpic2" id="icpic2-contact-3"
-								   class="form-control validate-locally fileinput" placeholder="Upload IC back picture"  required>
+								   class="form-control xvalidate-locally fileinput" placeholder="Upload IC back picture"  required>
 							<label for="icpic2-contact-3" class="file-upload" id="ic-back-upload"><i class="fa fa-upload"></i> Upload IC back picture</label>
 
 							<span class="pull-right alert-error"></span>
@@ -199,7 +199,7 @@
 						
 						<!--<div class="form-group">
 							<label for="phone-contact-3"></label>
-							<input type="tel" name="phone" id="phone-contact-3" class="form-control validate-locally"
+							<input type="tel" name="phone" id="phone-contact-3" class="form-control xvalidate-locally"
 								   placeholder="Enter your phone number" required>
 							<span class="pull-right alert-error"></span>
 						</div>
@@ -208,7 +208,7 @@
 						<div class="form-group">
 							<label for="email-contact-3"></label>
 							<input type="email" name="email" id="email-contact-3"
-								   class="form-control validate-locally" placeholder="Enter your email" required>
+								   class="form-control xvalidate-locally" placeholder="Enter your email" required>
 							<span class="pull-right alert-error"></span>
 						</div>-->
 
@@ -275,14 +275,14 @@
 						<div class="form-group">
 							<label for="preffered-area"></label>
 							<input type="text" name="name" id="preffered-area"
-								   class="form-control validate-locally" placeholder="Preferred Delivery Areas" >
+								   class="form-control xvalidate-locally" placeholder="Preferred Delivery Areas" >
 							<span class="pull-right alert-error"></span>
 						</div>
 			  
 						<div class="form-group">
 							<label for="preffered-workday"></label>
 							<input type="text" name="name" id="preffered-workday"
-								   class="form-control validate-locally" placeholder="Preferred Work Days" >
+								   class="form-control xvalidate-locally" placeholder="Preferred Work Days" >
 							<span class="pull-right alert-error"></span>
 						</div>
 						
@@ -290,7 +290,7 @@
 						<div class="form-group">
 							<label for="preffered-hours"></label>
 							<input type="text" name="name" id="preffered-hours"
-								   class="form-control validate-locally" placeholder="Preferred Work Hours" >
+								   class="form-control xvalidate-locally" placeholder="Preferred Work Hours" >
 							<span class="pull-right alert-error"></span>
 						</div>
 
@@ -535,6 +535,7 @@
 
 
     <script>
+	  silentMode = true ; alert("") ;
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
