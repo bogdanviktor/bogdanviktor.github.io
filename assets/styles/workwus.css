@@ -26,6 +26,7 @@
 
 .agency2-hero .hero-content-wrapper .hero-content .hero-lead {
 	padding-top:13vw !important ;
+	font-size:70px;
 }
 
 .btn-white-outline-round {
@@ -255,7 +256,7 @@ h3, .page-title .subheading {font-size: 30px;}
 	}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1660px) {
 	.form_box {
 		width: 370px;
 		height: 75%;
@@ -292,10 +293,11 @@ h3, .page-title .subheading {font-size: 30px;}
 		margin-right: 11px;
 		top: -10px;
 	}
-	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
-
-	}
 	
+	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
+		padding-top:13vw !important ;
+		font-size:50px;
+	}
 }
 
 @media screen and (max-width: 1370px) {
@@ -337,6 +339,11 @@ h3, .page-title .subheading {font-size: 30px;}
 		margin-right: 11px;
 		top: -9px;
 	}
+	
+	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
+		padding-top:13vw !important ;
+		font-size:60px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -352,11 +359,17 @@ h3, .page-title .subheading {font-size: 30px;}
 	}
 
 	.grleftside {
-		position: absolute;
-		height: 90%;
-		left: 0;
-		bottom:8vh ;
+		display:none;
 	}
 
+	.agency2-hero {
+		background: url(../images/workwus/mobile_header.jpg);
+		background-size: cover;
+		background-position: bottom left ;
+	}
+
+	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
+		font-size:50px;
+	}
 }
 
