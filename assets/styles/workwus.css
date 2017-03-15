@@ -179,7 +179,10 @@ h2.nunito_bold {
     text-transform: none;
     margin-top: 0px;
 }
-.container {width: 100%;}
+.container {
+	width: 1170px;
+}
+
 div.section.why {
     padding-bottom: 0;
     padding-top: 60px;
@@ -211,10 +214,7 @@ div.section.why {
     font-size: 22px;
 }
 .why-us .col-md-4 img {width: 150px;}
-h3, .page-title .subheading {font-size: 30px;}
-.text-center{font-size: 22px;
-    padding: 10px 120px 10px 110px;}
-/*.form_box { overflow: -moz-scrollbars-none; }*/
+
 
 .rightcloud {
   position: absolute;
@@ -370,6 +370,10 @@ h3, .page-title .subheading {font-size: 30px;}
 
 	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
 		font-size:50px;
+	}
+	
+	.container {
+		width: 95%;
 	}
 }
 
