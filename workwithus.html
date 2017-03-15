@@ -471,51 +471,6 @@
     <!-- BV -->
 	<script src="assets/js/defaultscripts.js"></script>
 
-  <script>
-      var region = "";
-      var country = "";
-      function getLocation()
-      {
-          if (navigator.geolocation)
-          {
-              navigator.geolocation.getCurrentPosition(showPosition, noGeolocation);
-          } else {
-
-          }
-      }
-      function showPosition(position)
-      {
-          var geocoder = new google.maps.Geocoder();
-          var latlong = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-          geocoder.geocode({'latLng': latlong}, function(results, status) {
-              if (status == google.maps.GeocoderStatus.OK) {
-                  if (results[0]) {
-                      for (var i = 0; i < results[0].address_components.length; i++)
-                      {
-                          var name = results[0].address_components[i].short_name;
-                          var type = results[0].address_components[i].types;
-                          console.log("NAME", name);
-                          if (type.indexOf("country") != -1)
-                          {
-                              if (name == "SG") {
-                                  window.location = "index_sg.html"
-                              }
-                          }
-                      }
-                  }
-              }
-          })
-      }
-
-      function noGeolocation()
-      {
-      //  alert('No location')
-      }
-
-      getLocation();
-  </script>
-
-
 
 
     <script>
