@@ -14,6 +14,35 @@
   left: 0;
 }
 
+#whyus {
+	margin-bottom:20px;
+}
+
+.radiobox-text {
+	display:block ;
+	margin-top:5px;
+	margin-bottom:2px;
+	font-size:14px;
+	color:#FFFFFF;
+}
+
+.radiobox-img {
+	width:27px;
+	margin-bottom:7px;
+}
+
+h2.whyheader {
+	font-size:23px !important ;
+	margin-bottom:5px !important ;
+}
+
+.whysubheading {
+	font-size:16px ;
+	letter-spacing:2px ;
+	margin-bottom:25px ;
+}
+
+
 .h-alt {
     font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
@@ -127,10 +156,20 @@
     background: #fff;
 	color: #555;    
 }
+
 .form-group-select div {
     display: inline-block;
     text-align: center;
 	width:23%;
+}
+
+.form-group-select div.hourboxdiv {
+	width:31%;
+}
+
+.form-group-select div.agreediv {
+	width:100%;
+	font-size:17px;
 }
 
 .form-group label {
@@ -166,9 +205,12 @@
     border-radius: 25px
 }
 .form-group input[type="submit"], .demo-submit {
-    width: 60%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    width: 140px ;
+    height: 40px ;
+	padding-top: 7px;
+	font-size:13px;
+	font-weight:500;
+	margin: 30px auto 30px auto;
 }
 .form-group {
     margin-bottom: 20px;
@@ -218,9 +260,9 @@ div.section.why {
 
 .rightcloud {
   position: absolute;
-  height: 90%;
+  height: 95%;
   right: 0;
-  bottom: 0 ; /*1.5vw;*/
+  bottom: 4.5vh;
 }
 
 .grleftside {
@@ -230,17 +272,15 @@ div.section.why {
   bottom:5vh ;
 }
 
-.h1line {
+
+.h4line {
 	display:block ;
 }
 
-.h1broken {
+.h4broken {
 	display:none ;
 }
 
-.hero-secondary {
-	display:block ;	
-}
 
 @media screen and (max-width: 1800px) {
 	.form_box {
@@ -301,6 +341,7 @@ div.section.why {
 }
 
 @media screen and (max-width: 1370px) {
+
 	.form_box {
 		width: 340px;
 	}
@@ -309,16 +350,18 @@ div.section.why {
 		display:none ;
 	}
 
-	.h1broken {
+	.h4line {
+		display:none ;
+	}
+
+	.h4broken {
 		display:block ;
 	}
 	
-	.hero-secondary {
-		display:none ;	
-	}
 	.from-header h2 {
 		font-size: 30px;
 	}
+
 	.from-header h2 {
 		font-family: nunito-regular;
 		font-size: 24px;
@@ -341,12 +384,16 @@ div.section.why {
 	}
 	
 	.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
-		padding-top:13vw !important ;
+		padding-top:7vw !important ;
 		font-size:60px;
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
+	.rightcloud {
+		display:none ;
+	}
+
 	.form_box {
 		width: 100%;
 		height: 100%;
